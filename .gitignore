@@ -114,5 +114,5 @@ jspm_packages
 .yarn-integrity
 
 
-/Lesson10/bower_components/
-/Lesson10/.idea/
+bower_components/
+.idea/

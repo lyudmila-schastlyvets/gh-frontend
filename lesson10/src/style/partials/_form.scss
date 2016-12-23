@@ -1,0 +1,39 @@
+.contact-form {
+  display: flex;
+  width: 49%;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  li {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+
+    &:nth-child(1) {
+      width: 46%;
+    }
+    &:nth-child(2) {
+      width: 46%;
+    }
+    &:nth-child(5) {
+      justify-content: flex-end;
+    }
+  }
+
+  input,
+  textarea {
+    padding: 18px 15px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+  }
+
+  textarea {
+
+  }
+}
