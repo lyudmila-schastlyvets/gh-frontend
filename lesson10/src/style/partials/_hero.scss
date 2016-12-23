@@ -1,7 +1,7 @@
 .hero {
   background-image: url('../images/layer-3.png');
   padding: 12px 0 100px;
-  height: 100vh;
+  height: 532px;
 
   .content {
     display: flex;
@@ -9,8 +9,20 @@
     flex-direction: column;
   }
 
+  .wrapper {
+    height: 100%;
+  }
+
+  .overlap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
   .main-title {
     max-width: 505px;
+    margin-bottom: 40px;
     color: white;
     font-family: $main-font;
     font-size: 33px;
