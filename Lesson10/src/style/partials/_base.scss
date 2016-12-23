@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+$main-font: "Open Sans", sans-serif;
+
+body {
+  background-color: #fafafa;
+  font-family: $main-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+.wrapper {
+  padding: 0 15px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  color: #504f50;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-description {
+  max-width: 486px;
+  color: #a8a8a8;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.button {
+  padding: 5px 40px;
+  background-color: #39c9da;
+  border-radius: 3px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 45px;
+  transition: 400ms;
+
+  &:hover {
+    background-color: #3ce3f4;
+  }
+}

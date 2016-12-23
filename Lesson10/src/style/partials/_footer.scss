@@ -1,0 +1,14 @@
+.footer {
+  padding: 20px 0 15px;
+  background-color: #39c9da;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .copyright {
+    color: white;
+  }
+}

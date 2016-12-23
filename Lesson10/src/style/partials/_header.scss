@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+
+    a {
+      color: #39c9da;
+      font-weight: 700;
+
+      span {
+        color: #fff;
+        font-family: Roboto, sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+
+  li {
+    margin-left: 40px;
+
+    a {
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
