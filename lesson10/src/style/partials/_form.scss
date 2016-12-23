@@ -1,6 +1,6 @@
 .contact-form {
   display: flex;
-  width: 49%;
+  width: 570px;
 
   ul {
     display: flex;
@@ -14,12 +14,13 @@
     display: flex;
 
     &:nth-child(1) {
-      width: 46%;
+      display: flex;
+      justify-content: space-between;
+      & > * {
+        width: 270px;
+      }
     }
-    &:nth-child(2) {
-      width: 46%;
-    }
-    &:nth-child(5) {
+    &:nth-child(4) {
       justify-content: flex-end;
     }
   }

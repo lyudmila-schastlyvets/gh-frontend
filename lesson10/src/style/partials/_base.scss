@@ -21,10 +21,6 @@ textarea {
   outline: none;
 }
 
-h2 {
-  margin: 0;
-}
-
 .wrapper {
   padding: 0 15px;
   max-width: 1170px;
@@ -40,6 +36,7 @@ h2 {
 }
 
 .section-description {
+  margin-bottom: 45px;
   max-width: 486px;
   color: #a8a8a8;
   font-size: 14px;
