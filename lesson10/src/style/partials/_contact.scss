@@ -44,9 +44,22 @@
     }
 
     p {
+      margin-bottom: 20px;
       color: #a8a8a8;
       font-size: 14px;
       line-height: 20px;
+    }
+
+    .address {
+      width: 132px;
+      color: #a8a8a8;
+      font-size: 14px;
+      line-height: 20px;
+      h4 {
+        margin-bottom: 22px;
+        color: #504f50;
+        font-weight: 700;
+      }
     }
   }
 }

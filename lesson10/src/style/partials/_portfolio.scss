@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 60px 0;
+  padding: 60px 0 20px;
   background-color: #f4f4f4;
   border-top: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
@@ -14,10 +14,10 @@
 .portfolio-examples {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 
   .portfolio-item {
-    //min-width: 370px;
+    max-width: 368px;
     margin-bottom: 40px;
     background-color: white;
     border: 1px solid #e8e8e8;
@@ -90,5 +90,11 @@
         background-color: #fff;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1170px){
+  .portfolio-examples {
+    justify-content: space-between;
   }
 }

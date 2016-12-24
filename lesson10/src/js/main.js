@@ -1,5 +1,5 @@
 $(function() {
-    $(".menuIcon").click(function(e) {
+    $(".menuIcon a").click(function(e) {
         $(".menu").toggleClass("menuOpen");
         e.preventDefault();
     });

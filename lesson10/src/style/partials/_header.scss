@@ -32,6 +32,7 @@
 
     a {
       color: #fff;
+
       &:hover {
         text-decoration: underline;
       }
@@ -56,16 +57,20 @@
   .menuIcon {
     display: none;
     width: 100%;
-    text-align: center;
-    &:hover {
-      cursor: pointer;
-    }
+    text-align: right;
+
     a {
-      width: 100%;
+      width: 50px;
       display: inline-block;
       color: #fff;
-      img {
-        vertical-align: middle;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .fa {
+        font-size: 30px;
+        line-height: 35px;
       }
     }
   }
@@ -76,6 +81,7 @@
     .main-nav {
       width: 100%;
       position: absolute;
+      top: 50px;
       margin-left: -15px;
     }
     .menu {
@@ -118,7 +124,6 @@
     .menuIcon {
       a {
         text-align: right;
-        padding: 15px 15px 0 0;
       }
       display: inline-block;
     }
