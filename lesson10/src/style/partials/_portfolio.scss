@@ -17,7 +17,7 @@
   justify-content: space-between;
 
   .portfolio-item {
-    min-width: 370px;
+    //min-width: 370px;
     margin-bottom: 40px;
     background-color: white;
     border: 1px solid #e8e8e8;
@@ -60,6 +60,10 @@
   position: relative;
   width: 100%;
   display: flex;
+
+  img {
+    max-width: 100%;
+  }
 
   .overlay {
     display: flex;

@@ -1,6 +1,7 @@
 .contact-form {
   display: flex;
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
 
   ul {
     display: flex;
@@ -15,9 +16,10 @@
 
     &:nth-child(1) {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       & > * {
-        width: 270px;
+        width: 100%;
       }
     }
     &:nth-child(4) {
@@ -36,5 +38,47 @@
 
   textarea {
 
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contact-form {
+    display: flex;
+    max-width: 570px;
+    width: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    li {
+      margin-bottom: 30px;
+      width: 100%;
+      display: flex;
+
+      &:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        & > * {
+          width: 270px;
+        }
+      }
+      &:nth-child(4) {
+        justify-content: flex-end;
+      }
+    }
+
+    input,
+    textarea {
+      padding: 18px 15px;
+      width: 100%;
+    }
+
+    textarea {
+
+    }
   }
 }
