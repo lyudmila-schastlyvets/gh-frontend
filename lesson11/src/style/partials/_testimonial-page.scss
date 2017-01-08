@@ -1,3 +1,74 @@
+.testimonials {
+  padding: 70px 0 0;
+
+  .container {
+    background: url("../images/quote-icon.png") right 40px top no-repeat;
+  }
+
+  .section-title {
+    padding-top: 28px;
+  }
+
+  .section-description {
+    margin-bottom: 30px;
+  }
+}
+
+.testimonials-list {
+
+  li {
+    padding: 98px 0;
+
+    &:nth-child(even) {
+      background-color: #eaeff3;
+    }
+
+    .author-image {
+      position: relative;
+
+      img {
+        max-width: 458px;
+      }
+    }
+
+    &:first-child {
+      padding-top: 0;
+      padding-bottom: 98px;
+      background: url("../images/triangles.png") right 15px bottom no-repeat;
+    }
+  }
+
+  .testimonial-quote {
+    position: absolute;
+    width: 66%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 30px 25px;
+    background-color: white;
+    border: 1px solid #eaeff3;
+
+    blockquote {
+      color: #585858;
+      font: 14px/28px $main-font;
+    }
+
+    .author {
+      display: block;
+      color: #1c1c1c;
+      font: 700 13px/24px 'Raleway', sans-serif;
+      text-transform: uppercase;
+    }
+
+    .designation {
+      display: block;
+      color: #ea0;
+      font: 14px/28px $main-font;
+    }
+  }
+}
+
+
 .post-comment {
   padding-top: 100px;
   padding-bottom: 0;
