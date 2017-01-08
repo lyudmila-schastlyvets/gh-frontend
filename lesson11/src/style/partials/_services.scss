@@ -1,0 +1,60 @@
+.services {
+  background-color: #eaeff3;
+  padding-bottom: 0;
+
+  .container {
+    background: url("../images/triangles.png") right 15px bottom no-repeat;
+    padding-bottom: 98px;
+  }
+}
+
+.features-list {
+  padding: 75px 0 0 0;
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 68px;
+
+    .fa {
+      color: #39c9da;
+      font-size: 33px;
+      margin-bottom: 24px;
+    }
+
+    .feature-title {
+      color: #1c1c1c;
+      font: 700 16px/24px 'Raleway', sans-serif;
+      text-transform: uppercase;
+    }
+
+    .description {
+      color: #585858;
+      font: 14px/28px $main-font;
+    }
+
+    .read-more {
+      padding: 10px 30px;
+      background-color: #4b4a4b;
+      border-radius: 1px;
+      color: white;
+      font-size: 14px;
+    }
+
+    &:hover {
+
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 869px) {
+
+}

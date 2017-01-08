@@ -71,7 +71,7 @@ var config = {
 
 gulp.task('jsVendor', function() {
     var files = (mainBowerFiles({ filter: new RegExp('.*js$', 'i') }));
-        gulp.src(['bower_components/jquery/dist/jquery.js'],files)
+        gulp.src(files)
         .pipe(concat('vendor.js'))
         .pipe(uglify())
         .pipe(gulp.dest(path.build.js));
@@ -82,10 +82,10 @@ gulp.task('cssVendor', function() {
     gulp.src(files)
         .pipe(concat('vendor.scss'))
         .pipe(sass({
-        outputStyle: 'nested',
+            outputStyle: 'nested',
             precison: 3,
             errLogToConsole: true,
-            includePaths: ['bower_components/bootstrap-sass/assets/stylesheets']
+            includePaths: ['bower_components/bootstrap-sass/assets/stylesheets','bower_components/font-awesome/scss']
         }))
         .pipe(cssmin())
         .pipe(gulp.dest(path.build.style));

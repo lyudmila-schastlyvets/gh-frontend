@@ -1,5 +1,5 @@
 {
-  "name": "lesson10",
+  "name": "lesson11",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.11",
     "jshint": "^2.9.4",
-    "main-bower-files": "^2.13.1"
+    "main-bower-files": "^2.13.1",
     "gulp-dependency-install": "0.0.8"
   },
   "description": "",

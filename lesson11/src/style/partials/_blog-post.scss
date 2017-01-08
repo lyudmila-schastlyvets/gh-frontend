@@ -1,0 +1,41 @@
+.post {
+  p {
+    color: #585858;
+    font: 14px/28px $main-font;
+    letter-spacing: 1px;
+  }
+
+  .blog-post-heading {
+    margin-top: 48px;
+    margin-bottom: 18px;
+    color: #1c1c1c;
+    font: 700 16px/24px 'Raleway', sans-serif;
+    text-transform: uppercase;
+  }
+
+  blockquote {
+    margin: 47px 0 47px 97px;
+    padding: 25px 45px;
+    border-left: 4px solid #ffaf36;
+    background-color: #fef1de;
+
+    p {
+      color: #1c1c1c;
+      font: 15px/28px 'Lora', sans-serif;
+      font-style: italic;
+      letter-spacing: 0;
+    }
+  }
+
+  .share-post {
+    justify-content: flex-start;
+    margin: 70px 0;
+    align-items: center;
+  }
+}
+
+.post-title {
+  color: #1c1c1c;
+  font: 700 18px/24px 'Raleway', sans-serif;
+  text-transform: uppercase;
+}

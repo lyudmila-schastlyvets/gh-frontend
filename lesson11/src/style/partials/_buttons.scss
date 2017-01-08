@@ -1,0 +1,18 @@
+.button-more {
+  display: inline-block;
+  min-width: 151px;
+  padding: 5px 33px;
+  border-radius: 3px;
+  border: 2px solid #ffaf36;
+  background-color: transparent;
+  color: #ffaf36;
+  font: 700 13px/37px 'Raleway', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 400ms;
+
+  &:hover {
+    color: #fff;
+    background-color: #ffaf36;
+  }
+}
