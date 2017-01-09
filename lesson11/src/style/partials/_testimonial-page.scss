@@ -1,7 +1,7 @@
 .testimonials {
   padding: 70px 0 0;
 
-  .container {
+  .quote-container {
     background: url("../images/quote-icon.png") right 40px top no-repeat;
   }
 
@@ -32,9 +32,13 @@
     }
 
     &:first-child {
-      padding-top: 0;
-      padding-bottom: 98px;
-      background: url("../images/triangles.png") right 15px bottom no-repeat;
+      padding: 0;
+
+      .container{
+        padding-top: 0;
+        padding-bottom: 98px;
+        background: url("../images/triangles.png") right 15px bottom no-repeat;
+      }
     }
   }
 
@@ -67,7 +71,6 @@
     }
   }
 }
-
 
 .post-comment {
   padding-top: 100px;
