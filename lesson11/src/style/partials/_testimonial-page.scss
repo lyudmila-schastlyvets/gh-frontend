@@ -1,7 +1,7 @@
 .testimonials {
   padding: 70px 0 0;
 
-  .quote-container {
+  .testimonial-first-quote {
     background: url("../images/quote-icon.png") right 40px top no-repeat;
   }
 
@@ -28,6 +28,8 @@
 
       img {
         max-width: 458px;
+        width: 100%;
+        text-align: center;
       }
     }
 
@@ -102,6 +104,22 @@
 
     .left-part-form {
       padding-left: 0;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1040px) {
+  .testimonials-list {
+    .testimonial-quote {
+      position: relative;
+      width: 100%;
+      margin: 20px 0;
+      top:0;
+      transform: translateY(0);
+      padding: 30px 25px;
+      background-color: white;
+      border: 1px solid #eaeff3;
     }
   }
 }
