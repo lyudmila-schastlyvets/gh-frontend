@@ -1,4 +1,5 @@
 .post {
+
   p {
     color: #585858;
     font: 14px/28px $main-font;
@@ -38,4 +39,123 @@
   color: #1c1c1c;
   font: 700 18px/24px 'Raleway', sans-serif;
   text-transform: uppercase;
+}
+
+.author {
+
+  img {
+    width: 100%;
+  }
+}
+
+.author-information {
+  position: relative;
+  padding: 37px 37px 38px;
+  background-color: #36a8ff;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #36a8ff;
+    content: '';
+    display: block;
+  }
+
+  .author-name {
+    margin-bottom: 12px;
+    color: white;
+    font: 700 16px/24px 'Raleway', sans-serif;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #dbefff;
+    font: 14px/28px $main-font;
+  }
+}
+
+.post-comments {
+  padding: 0 0 52px;
+
+  .post-comments-container {
+    padding-top: 60px;
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+.comments-list {
+
+  li {
+    padding: 38px 15px;
+    border-bottom: 1px solid #e6e9ee;
+
+    .author-image {
+
+      img {
+        width: 100%;
+      }
+    }
+
+    span {
+      color: #1c1c1c;
+      font: 700 13px/24px 'Proxima Nova', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      .publish-date {
+        color: #ffaf36;
+        font-weight: 600;
+      }
+    }
+
+    p {
+      color: #585858;
+      font: 14px/28px $main-font;
+    }
+  }
+}
+
+.leave-comment {
+  background-color: #eaeff3;
+
+  .section-description {
+    margin-bottom: 18px;
+  }
+
+  .contact-form {
+
+    li:nth-child(1) input[type=text] {
+      margin-bottom: 0;
+    }
+
+    input[required] + label,
+    textarea[required] + label{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 15px 0 6px;
+      color: #757c81;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    input,
+    textarea {
+      padding: 18px 0 6px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #dce3e8;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .comment {
+      height: 220px;
+    }
+  }
 }
