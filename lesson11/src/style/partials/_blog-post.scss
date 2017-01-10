@@ -1,3 +1,18 @@
+.blog-post {
+  .section-description {
+    margin-bottom: 30px;
+  }
+}
+
+.author-image-post {
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+
 .post {
 
   p {
@@ -15,7 +30,7 @@
   }
 
   blockquote {
-    margin: 47px 0 47px 97px;
+    margin: 47px 0 47px 15px;
     padding: 25px 45px;
     border-left: 4px solid #ffaf36;
     background-color: #fef1de;
@@ -45,6 +60,7 @@
 
   img {
     width: 100%;
+    max-width: 165px;
   }
 }
 
@@ -83,22 +99,21 @@
 .post-comments {
   padding: 0 0 52px;
 
-  .post-comments-container {
+  .section-header {
     padding-top: 60px;
     border-top: 1px solid #e6e6e6;
   }
-}
 
-.comments-list {
-
-  li {
-    padding: 38px 15px;
+  .comment-single {
+    padding: 38px 0;
     border-bottom: 1px solid #e6e9ee;
 
     .author-image {
 
       img {
-        width: 100%;
+        max-width: 83px;
+        height: 83px;
+        border-radius: 50%;
       }
     }
 
@@ -118,8 +133,35 @@
       color: #585858;
       font: 14px/28px $main-font;
     }
+
+    .reply {
+      display: inline-block;
+      margin-top: 20px;
+      transition: 400ms;
+
+      .fa-reply {
+        width: 33px;
+        color:  #ffaf36;
+        border: 1px solid #ffaf36;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 33px;
+      }
+
+      &:hover .fa-reply {
+        color: #fff;
+        background-color: #ffaf36;
+      }
+    }
+  }
+
+  .level-second {
+    border-bottom: none;
   }
 }
+
+
+
 
 .leave-comment {
   background-color: #eaeff3;
@@ -156,6 +198,16 @@
 
     .comment {
       height: 220px;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+
+  .post {
+
+    blockquote {
+      margin-left: 97px;
     }
   }
 }
