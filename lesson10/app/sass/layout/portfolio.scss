@@ -1,0 +1,57 @@
+.portfolio {
+  background-color: #f4f4f4;
+  overflow: hidden;
+  .flex-content {
+    li {
+      width: 350px;
+      margin: 20px 15px;
+      .item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+        .hover {
+          position: absolute;
+          visibility: hidden;
+        }
+        &:hover .hover {
+          visibility: visible;
+          cursor: pointer;
+        }
+      }
+      .category {
+        padding: 20px 10px;
+        background-color: #fff;
+        overflow: hidden;
+        .project {
+          float: left;
+          font-size: 12px;
+        }
+        span {
+          float: right;
+          font-size: 11px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #port{
+    li {
+      flex-basis: 45%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #port{
+    li {
+      flex-basis: 30%;
+    }
+  }
+}

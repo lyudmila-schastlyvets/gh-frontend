@@ -1,0 +1,117 @@
+.contact {
+  background-color: #f4f4f4;
+  overflow: hidden;
+  .info {
+    margin-bottom: 20px;
+  }
+  .contact-info {
+    position: relative;
+    margin-bottom: 45px;
+    font-size: 12px;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 70px;
+      border-bottom: 1px solid #39c9da;
+    }
+  }
+  p {
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .address {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  address {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #a8a8a8;
+  }
+  .feedback {
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        padding: 12px;
+      }
+      input, textarea {
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+        padding: 15px;
+        border: 1px solid #e6e6e6;
+        font-weight: 400;
+        resize: none;
+        color: #c9c9c9;
+        &:focus {
+          outline: none;
+          border: 2px solid #39c9da;
+        }
+      }
+      textarea {
+        height: 100px;
+      }
+      .name {flex-basis: 50%;}
+      .email {order: 1; flex-basis: 50%;}
+      .subject {order: 2; flex-basis: 100%;}
+      .message {order: 3; flex-basis: 100%;}
+    }
+    .btn {
+      float: right;
+      margin: 12px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    .contact-info {
+      font-size: 14px;
+      &:after {
+        width: 100px;
+        border-bottom: 2px solid #39c9da;
+      }
+    }
+    address {
+      font-size: 14px;
+    }
+    .info, .feedback {
+      margin-bottom: 0;
+      padding: 15px;
+      width: 50%;
+    }
+    .feedback {
+      ul {
+        input, textarea {
+          height: 47px;
+          font-size: 14px;
+        }
+        textarea {
+          height: 152px;
+        }
+        li.name {flex-basis: 100%;}
+        li.email {order: 1; flex-basis: 100%;}
+        li.subject {order: 2; flex-basis: 100%;}
+        li.message {order: 3; flex-basis: 100%;}
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    .feedback {
+      ul {
+        li.name {flex-basis: 50%;}
+        li.email {order: 1; flex-basis: 50%;}
+        li.subject {order: 2; flex-basis: 100%;}
+        li.message {order: 3; flex-basis: 100%;}
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 40px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: #39c9da;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+  &:hover {
+    outline: none;
+    background-color: #17daa3;
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+    color: #fff;
+  }
+}
+
+.btn-portfolio {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 40px;
+  border-radius: 1px;
+  border: 1px solid #fff;
+  background: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #39c9da;
+  }
+}
+
+.btn-services {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  border-radius: 1px;
+  border: 1px solid #fff;
+  background: #4b4a4b;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+  &:hover {
+    outline: none;
+    background: #fff;
+    color: #323030;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .btn {
+    width: 201px;
+    height: 55px;
+    font-size: 20px;
+  }
+  .btn-portfolio {
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .btn-services {
+    width: 129px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
