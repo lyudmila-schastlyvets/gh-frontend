@@ -1,19 +1,31 @@
-.hero-404 {
+.hero-banner {
   height: 395px;
-  background: url('../../images/bg-404.png') center center no-repeat;
+}
+
+.hero-404 {
+  background: url('../images/bg-404.png') center center no-repeat;
 }
 
 .hero-blog {
-  height: 395px;
-  background: url('../../images/bg-blog-page.png') center center no-repeat;
+  background: url('../images/bg-blog-page.png') center center no-repeat;
 }
 
 .hero-testimonials {
-  height: 395px;
-  background: url('../../images/bg-testimonials.png') center center no-repeat;
+  background: url('../images/bg-testimonials.png') center center no-repeat;
 }
 
 .hero-contact {
-  height: 395px;
-  background: url('../../images/bg-contact-us.png') center center no-repeat;
+  background: url('../images/bg-contact-us.png') center center no-repeat;
+}
+
+.hero-faq {
+  background: url('../images/bg-faq.png') center center no-repeat;
+}
+
+.hero-news {
+  background: url('../images/bg-news-page.png') center center no-repeat;
+}
+
+.hero-services {
+  background: url('../images/bg-services.png') center center no-repeat;
 }
