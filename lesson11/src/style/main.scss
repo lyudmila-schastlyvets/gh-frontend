@@ -1,25 +1,30 @@
-@import 'base/_reset';
-@import 'base/_base';
-@import 'base/_fonts';
+@import 'base/reset';
+@import 'base/base';
+@import 'base/fonts';
 
-@import 'components/_buttons';
-@import 'components/_social-icons';
-@import 'components/_form';
-@import 'components/_carousel';
-@import 'components/_banners';
+@import 'components/buttons';
+@import 'components/social-icons';
+@import 'components/form';
+@import 'components/carousel';
+@import 'components/banners';
 
-@import 'layout/_header';
-@import 'layout/_footer';
+@import 'layout/header';
+@import 'layout/footer';
 
-@import 'pages/_hero';
-@import 'pages/_about';
-@import 'pages/_services';
-@import 'pages/_clients';
-@import 'pages/_news';
-@import 'pages/_partners';
-@import 'pages/_contact';
+@import 'pages/hero';
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/clients';
+@import 'pages/news';
+@import 'pages/partners';
+@import 'pages/contact';
 
-@import "pages/_blog-post";
-@import 'pages/_blog-page';
-@import 'pages/_error-page';
-@import 'pages/_testimonial-page';
+@import "pages/blog-post";
+@import 'pages/blog-page';
+@import 'pages/error-page';
+@import 'pages/testimonial-page';
+@import 'pages/news-page';
+@import 'pages/faq-page';
+@import 'pages/services-page';
+@import 'pages/about-us-page';
+@import 'pages/pages-page';

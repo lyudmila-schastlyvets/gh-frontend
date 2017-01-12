@@ -1,0 +1,111 @@
+.single-news {
+
+  .row > div {
+    margin-bottom: 10px;
+  }
+
+  &:nth-child(even) {
+    background-color: #eaeff3;
+
+    .news-date {
+
+      &:before {
+        border-left: 18px solid #eaeff3;
+      }
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+
+    .container {
+      background: url("../images/triangles.png") right 15px bottom no-repeat;
+      padding-bottom: 98px;
+    }
+  }
+
+  .news-date {
+    position: relative;
+    display: block;
+    padding: 15px 20px;
+    background-color: #ffaf36;
+    color: #1c1c1c;
+    font: 700 13px/12px $main-font;
+    text-transform: uppercase;
+    text-align: right;
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 21px solid transparent;
+      border-left: 18px solid #fff;
+      border-bottom: 21px solid transparent;
+    }
+  }
+
+  .news-images {
+
+    img {
+      margin-top: 32px;
+
+      &:first-child {
+        width: 100%;
+        margin-top: 0;
+      }
+
+    }
+  }
+
+  h3 {
+    margin: -5px 0 15px;
+  }
+
+  ul {
+    margin-top: 24px;
+
+    li {
+      color: #1c1c1c;
+      font: 700 12px/30px $main-font;
+      text-transform: uppercase;
+
+      .fa {
+        font-weight: 400;
+      }
+
+    }
+  }
+
+  .news-information {
+
+    blockquote {
+      margin-top: 30px;
+      padding: 20px 26px 26px;
+      background-color: #d1ebff;
+      border-left: 4px solid #36a8ff;
+
+      p {
+        color: #1c1c1c;
+        font: 600 14px/28px $main-font;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .single-news {
+
+    .news-information {
+
+      blockquote {
+        margin-top: 60px;
+        padding: 30px 56px 36px;
+      }
+    }
+  }
+}
