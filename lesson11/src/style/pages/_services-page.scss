@@ -1,0 +1,28 @@
+.services-clients-section {
+  padding-bottom: 0;
+
+  .container {
+    background: url("../images/triangles.png") right 15px bottom no-repeat;
+    padding-bottom: 165px;
+  }
+}
+
+.single-service {
+
+  &:first-child {
+    padding-bottom: 0;
+
+    .container {
+      background: url("../images/triangles.png") right 15px bottom no-repeat;
+      padding-bottom: 98px;
+    }
+  }
+
+  .row > div {
+    margin-bottom: 10px;
+  }
+
+  &:nth-child(even) {
+    background-color: #eaeff3;
+  }
+}
