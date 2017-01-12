@@ -109,3 +109,12 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .single-news {
+
+    .row > div {
+      margin-bottom: 0;
+    }
+  }
+}
