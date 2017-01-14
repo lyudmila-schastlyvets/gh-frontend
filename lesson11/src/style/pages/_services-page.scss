@@ -9,6 +9,15 @@
 
 .single-service {
 
+  h3 {
+    margin-top: -5px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
   &:first-child {
     padding-bottom: 0;
 
@@ -24,5 +33,11 @@
 
   &:nth-child(even) {
     background-color: #eaeff3;
+  }
+
+  .service-image {
+    img {
+      width: 100%;
+    }
   }
 }

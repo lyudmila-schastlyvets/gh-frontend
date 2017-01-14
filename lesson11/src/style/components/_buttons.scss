@@ -16,3 +16,15 @@
     background-color: #ffaf36;
   }
 }
+
+.button-search {
+  background-color: #ffaf36;
+  transition: 400ms;
+
+  &:hover {
+
+    .fa {
+      color: #fff;
+    }
+  }
+}
