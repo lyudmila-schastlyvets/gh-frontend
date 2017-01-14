@@ -86,15 +86,16 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
-            },
-            // {
-            //     breakpoint: 480,
-            //     settings: {
-            //         slidesToShow: 1,
-            //         slidesToScroll: 1
-            //     }
-            // }
+            }
         ]
+    });
+
+    $(".position-link").click(function (event) {
+        event.preventDefault();
+        if($(this).hasClass ("down-arrow"))
+            $(this).removeClass("down-arrow");
+        else $(this).addClass("down-arrow");
+        $(this).parent("li").find(".open-list").fadeToggle();
     });
 
 });
