@@ -32,7 +32,6 @@
   .offer {
     margin-bottom: 50px;
   }
-
 }
 
 .position-list {
@@ -134,11 +133,11 @@
 
 @media only screen and (min-width: 1000px) {
 
-.position-list {
-  .position {
-    dl {
-      column-count: 2;
+  .position-list {
+    .position {
+      dl {
+        column-count: 2;
+      }
     }
   }
-}
 }

@@ -10,13 +10,6 @@ $(function() {
 });
 
 $(document).ready(function(){
-    // $(document).on("click",".navigation li a", function (event) {
-    //     event.preventDefault();
-    //     var id  = $(this).attr('href'),
-    //         top = $(id).offset().top;
-    //     $('body,html').animate({scrollTop: top}, 1500);
-    // });
-
     $('.fade_slide').slick({
         dots: true,
         slidesToShow: 1,
@@ -99,4 +92,3 @@ $(document).ready(function(){
     });
 
 });
-
