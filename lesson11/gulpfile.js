@@ -31,7 +31,7 @@ var sassBower = {
 
 // global paths
 var path = {
-    build: { // path to ready files
+    build: {
         html: 'build/',
         js: 'build/js/',
         style: 'build/style/',
@@ -39,15 +39,15 @@ var path = {
         fonts: 'build/fonts/'
     },
 
-    src: { // path to source files
-        html:'src/*.html', // all files with .html
-        js: 'src/js/main.js', // only main.js files
+    src: {
+        html:'src/*.html',
+        js: 'src/js/main.js',
         style:'src/style/main.scss',
         img: 'src/images/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
 
-    watch: { // path to files which we want to watch
+    watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
@@ -55,7 +55,7 @@ var path = {
         fonts: 'src/fonts/**/*.*',
         bower: '../bower_components/**/*.*'
     },
-    clean: './build',
+    clean: './build'
 };
 
 // dev server settings
@@ -105,40 +105,41 @@ gulp.task('fontsBootstrap', function () {
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html)
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
-        .pipe(livereload()); //И перезагрузим наш сервер для обновлений
+        .pipe(rigger())
+        .pipe(gulp.dest(path.build.html)) 
+        .pipe(livereload());
 });
 
 gulp.task('js:build', function () {
-    gulp.src(path.src.js) //Найдем наш main файл
+    gulp.src(path.src.js)
         .pipe(rigger()) //Прогоним через rigger
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
         .pipe(uglify()) //Сожмем наш js
         .pipe(sourcemaps.write()) //Пропишем карты
-        .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
-        .pipe(livereload()); //И перезагрузим сервер
+        .pipe(gulp.dest(path.build.js))
+        .pipe(livereload());
 });
 
 gulp.task('style:build', function () {
-    gulp.src(path.src.style) //Выберем наш main.scss
-        .pipe(sourcemaps.init()) //То же самое что и с js
-        .pipe(sass()) //Скомпилируем
+    gulp.src(path.src.style)
+        .pipe(sourcemaps.init())
+        .pipe(sass())
         .pipe(autoprefixer({browsers: ['last 2 versions']}))
-        .pipe(cssmin()) //Сожмем
+        .pipe(cssmin())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path.build.style)) //И в build
+        .pipe(gulp.dest(path.build.style))
         .pipe(livereload());
 });
 
 gulp.task('image:build', function () {
-    gulp.src(path.src.img) //Выберем наши картинки
-        .pipe(imagemin({ //Сожмем их
+    gulp.src(path.src.img)
+        .pipe(imagemin({
             progressive: true,
-            interlaced: true
+            interlaced: true,
+            pngquant: true
         }))
-        .pipe(gulp.dest(path.build.img)) //И бросим в build
-        .pipe(reload({stream: true}));
+        .pipe(gulp.dest(path.build.img))
+        .pipe(livereload());
 });
 
 gulp.task('fonts:build', function() {
@@ -158,7 +159,6 @@ gulp.task('build', [
 ]);
 
 // watch
-
 gulp.task('watch', function(){
     watch([path.watch.html], function(event, cb) {
         gulp.start('html:build');
