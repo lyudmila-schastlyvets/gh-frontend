@@ -115,6 +115,8 @@
       position: absolute;
       top: 84px;
       margin-left: -15px;
+      left: 15px;
+      order: 1;
     }
 
     .menu {
@@ -162,10 +164,15 @@
 
     .menuIcon {
       display: inline-block;
+      order: 2;
 
       a {
         text-align: right;
       }
+    }
+
+    .left-part-header {
+      order: 0;
     }
   }
 }
