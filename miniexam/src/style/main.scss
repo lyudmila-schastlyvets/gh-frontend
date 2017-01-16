@@ -1,0 +1,16 @@
+@import 'base/reset';
+@import 'base/base';
+@import 'base/fonts';
+
+@import 'components/buttons';
+@import 'components/social-icons';
+@import 'components/form';
+@import 'components/slider';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/hero';
+@import 'pages/services';
+@import 'pages/portfolio';
+@import 'pages/team';

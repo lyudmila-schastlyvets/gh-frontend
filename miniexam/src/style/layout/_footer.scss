@@ -1,0 +1,13 @@
+.footer {
+  background-color: $primary-color;
+  padding: 38px;
+
+  .wrapper {
+    text-align: center;
+  }
+
+  .copyright {
+    color: $secondary-color;
+    font: 400 13px/25px $main-font;
+  }
+}

@@ -1,0 +1,61 @@
+.social-links {
+  display: inline-block;
+
+  li {
+    float: left;
+    margin: 0 5px;
+
+    a {
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+
+      &.facebook-icon {
+        background-color: #547bbd;
+      }
+
+      &.twitter-icon {
+        background-color: #74caf0;
+      }
+
+      &.google-icon {
+        background-color: #4a4a4a;
+      }
+
+      &.linked-icon {
+        background-color: #1385c8;
+      }
+
+      &.pinterest-icon {
+        background-color: #eb5756;
+      }
+
+      &:hover {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+  }
+
+  .fa {
+    color: #fff;
+  }
+
+  &:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+}

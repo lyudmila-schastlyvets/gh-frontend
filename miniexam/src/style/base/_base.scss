@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+
+$main-font: "Quicksand", sans-serif;
+$secondary-font: "Droid Sans", sans-serif;
+
+$primary-color: #ff5959;
+$secondary-color: #e8e8e8;
+
+
+body {
+  background-color: #fff;
+  font-family: $main-font;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h3 {
+  color: black;
+  font: 400 24px/30px $main-font;
+}
+
+p {
+  color: black;
+  font: 400 13px/24px $main-font;
+}
+
+input,
+textarea{
+  background-color: transparent;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.wrapper {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 54px 0 100px;
+}
+
+.section-title {
+  color: black;
+  font: 30px/49px $main-font;
+  text-align: center;
+  padding: 0 28px 20px;
+}
