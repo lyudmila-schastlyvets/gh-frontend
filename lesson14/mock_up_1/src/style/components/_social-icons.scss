@@ -1,0 +1,57 @@
+.social-links {
+  display: inline-block;
+
+  li {
+    float: left;
+    margin: 0 5px;
+
+    a {
+      display: block;
+      width: 50px;
+      height: 49px;
+      font-size: 22px;
+      line-height: 49px;
+      text-align: center;
+
+      &.facebook-icon {
+        background-color: #3c5a98;
+      }
+
+      &.behance-icon {
+        background-color: #018ada;
+      }
+
+      &.dribbble-icon {
+        background-color: #e95c93;
+      }
+
+      &.pinterest-icon {
+        background-color: #d13f3f;
+      }
+
+      &:hover {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+        opacity: 0.9;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+  }
+
+  .fa {
+    color: #fff;
+  }
+
+  &:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+}

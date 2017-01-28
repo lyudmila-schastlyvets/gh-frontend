@@ -1,0 +1,14 @@
+.footer {
+  background-color: #222;
+  padding: 55px 0 45px;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    color: white;
+    font: 400 14px/40px $main-font;
+  }
+}

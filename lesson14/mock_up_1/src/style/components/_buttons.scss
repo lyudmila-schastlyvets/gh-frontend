@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  min-width: 170px;
+  padding: 10px 10px 14px 10px;
+  border-radius: 9px;
+  border: 3px solid #ff5959;
+  background-color: transparent;
+  color: white;
+  font: 700 18px/18px white;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 400ms;
+
+  &:hover {
+    color: #fff;
+    background-color: red;
+  }
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 20px 56px;
+  background-color: white;
+  border-radius: 4px;
+  color: #252525;
+  font: 700 24px/24px $main-font;
+  transition: 400ms;
+
+  &:hover {
+    color: #252525;
+  }
+}

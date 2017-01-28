@@ -1,0 +1,44 @@
+.clients {
+  background-color: #f4f4f4;
+  padding: 105px 0;
+
+  .clients-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-title {
+    margin-bottom: 86px;
+  }
+
+  .client {
+    display: block;
+    overflow: hidden;
+  }
+
+  .client-google {
+    width: 140px;
+    height: 48px;
+  }
+
+  .client-sumsung {
+    width: 136px;
+    height: 45px;
+  }
+
+  .client-flickr {
+    width: 126px;
+    height: 38px;
+  }
+
+  .client-foursquare {
+    width: 175px;
+    height: 48px;
+  }
+
+  .client-pinterest {
+    width: 182px;
+    height: 46px;
+  }
+}
