@@ -1,0 +1,51 @@
+.cta-button {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+  border: 3px solid #f8cd53;
+  background-color: #f8cd53;
+  border-radius: 6px;
+  color: #fff;
+  font: 700 18px/18px $main-font;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 400ms;
+
+  &:hover {
+    color: #f8cd53;
+    background-color: transparent;
+  }
+}
+
+.submit-btn {
+  padding: 0 30px;
+  border: 1px solid #de2b24;
+  background-color: #de2b24;
+  border-radius: 2px 3px 3px 2px;
+  color: white;
+  font: 700 15px/44px $main-font;
+  text-transform: uppercase;
+}
+
+.subscribe-btn {
+  padding: 0 36px;
+  border: 2px solid #515151;
+  border-radius: 1px;
+  background-color: transparent;
+  color: white;
+  font:700 17px/53px $main-font;
+  transition: 400ms;
+
+  &:hover {
+    border-color: red;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .cta-button {
+    display: inline-block;
+    width: auto;
+    padding: 20px 40px;
+    font: 700 23px/23px $main-font;
+  }
+}

@@ -1,0 +1,32 @@
+.about {
+  background-color: #fff;
+  padding: 100px 0;
+  
+  .section-description {
+    color: #424242;
+  }
+
+  h3 {
+    color: #424242;
+    font: 700 22px/24px $main-font;
+  }
+}
+
+.suggestion-list {
+
+  li {
+    margin-bottom: 16px;
+    text-align: center;
+
+    .about-image {
+      margin: 0 auto;
+      width: 100px;
+      height: 82px;
+    }
+
+    .suggest-info {
+      color: #5c5c5c;
+      font: 14px/22px $secondary-font;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.services {
+  background-color: #f3f3f3;
+}
+
+.single-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 3px 2px 2px 3px;
+  box-shadow: 0 0 5px #e2e2e2;
+
+  .step-image {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .step-number {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      display: flex;
+      width: 105px;
+      height: 105px;
+      background-color: #de2b24;
+      border: 2px solid white;
+      border-radius: 3px 2px 2px 3px;
+    }
+  }
+
+  .content-information {
+    display: flex;
+    align-items: center;
+
+    .content {
+      padding: 40px;
+    }
+
+    .step-title {
+      margin: 0 15px 6px 0;
+      color: #424242;
+      font: 18px/26px $main-font;
+    }
+
+    .description {
+      color: #5c5c5c;
+      font: 14px/22px $secondary-font;
+    }
+  }
+}
+
+.step-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font: 400 20px/26px $main-font;
+
+    .number {
+      font-family: "Georgia", sans-serif;
+      font-size: 60px;
+      line-height: 46px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .single-step {
+    .step-image {
+      width: 60%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .single-step {
+    flex-direction: row;
+
+    .step-image {
+      width: 33%;
+
+      .step-number {
+        right: -15%;
+      }
+    }
+
+    .content-information {
+      width: 67%;
+    }
+
+    &:nth-child(2n) {
+
+      .step-image {
+        order: 1;
+
+        .step-number {
+          left: -15%;
+        }
+      }
+
+      .content-information {
+        .content {
+          text-align: right;
+          padding: 0 88px 0 72px;
+        }
+      }
+    }
+
+    .content-information {
+      display: flex;
+      align-items: center;
+      width: 67%;
+      order: 0;
+
+      .content {
+        padding: 0 60px 0 88px;
+      }
+
+      .step-title {
+        margin: 0 15px 6px 0;
+        color: #424242;
+        font: 18px/26px $main-font;
+      }
+
+      .description {
+        color: #5c5c5c;
+        font: 14px/22px $secondary-font;
+      }
+    }
+  }
+}

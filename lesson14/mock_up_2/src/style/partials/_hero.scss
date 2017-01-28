@@ -1,0 +1,36 @@
+.hero {
+  background: url("../images/hero-banner.png") center center no-repeat;
+  background-size: cover;
+
+  .wrapper {
+    display: flex;
+    height: 590px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-title {
+    color: white;
+    font: 700 48px/50px $main-font;
+  }
+
+  .description {
+    margin-bottom: 30px;
+    color: #fff;
+    font: 300 30px/ 36px $main-font;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+
+}
+
+@media only screen and (min-width: 800px) {
+
+}
