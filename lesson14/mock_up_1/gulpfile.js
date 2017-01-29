@@ -67,13 +67,19 @@ var config = {
     logPrefix: "Frontend_Devil"
 };
 
-gulp.task('jsVendor', function() {
+gulp.task('jsVendor', ["jsIsotope"], function() {
     var files = (mainBowerFiles({ filter: new RegExp('.*js$', 'i') }));
+    // var f = files[0];
+    // f = f.split('bower_components');
+    // files.push(f[0]+"bower_components\\isotope\\dist\\isotope.pkgd.min.js");
+    // // console.log(files);
     gulp.src(files)
         .pipe(concat('vendor.js'))
         .pipe(uglify())
         .pipe(gulp.dest(path.build.js));
 });
+
+
 
 gulp.task('cssVendor', function() {
     var files = (mainBowerFiles({ filter: new RegExp('.*scss$', 'i') }));
@@ -87,6 +93,12 @@ gulp.task('cssVendor', function() {
         }))
         .pipe(cssmin())
         .pipe(gulp.dest(path.build.style));
+});
+
+gulp.task('jsIsotope', function () {
+    return gulp
+        .src('bower_components/isotope/dist/isotope.pkgd.min.js')
+        .pipe(gulp.dest(path.build.js));
 });
 
 gulp.task('fontsVendor',['fontsBootstrap'], function () {

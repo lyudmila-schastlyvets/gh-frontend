@@ -8,9 +8,12 @@
 @import 'layout/header';
 @import 'layout/footer';
 
-@import 'pages/hero';
-@import 'pages/services';
-@import 'pages/portfolio';
-@import 'pages/team';
-@import 'pages/clients';
-@import 'pages/contact';
+@import 'partials/hero';
+@import 'partials/intro';
+@import 'partials/download';
+@import 'partials/about';
+@import 'partials/services';
+@import 'partials/portfolio';
+@import 'partials/team';
+@import 'partials/clients';
+@import 'partials/contact';

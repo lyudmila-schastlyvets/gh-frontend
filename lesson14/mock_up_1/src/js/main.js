@@ -1,17 +1,28 @@
 $(function() {
     $(".menuIcon a").click(function(e) {
         $(".menu").toggleClass("menuOpen");
+        $(".close").toggleClass("close-shown");
         e.preventDefault();
     });
 
     $(".navigation li a").click (function(e){
         $(".menu").removeClass("menuOpen");
-    })
+        $(".close").removeClass("close-shown");
+    });
+
+    $(".close").click (function(e){
+        $(".menu").removeClass("menuOpen");
+        $(".close").removeClass("close-shown");
+    });
 });
 
-// $(document).on("click",".navigation li a", function (event) {
-//     event.preventDefault();
-//     var id  = $(this).attr('href'),
-//         top = $(id).offset().top;
-//     $('body,html').animate({scrollTop: top}, 1500);
-// });
+$(document).ready(function () {
+    // init Isotope
+// filter items on button click
+    $('.filter-button-group').on( 'click', 'button', function() {
+        $(".filter").removeClass("active");
+        $(this).addClass("active");
+        var filterValue = $(this).attr('data-filter');
+        $("#container").isotope({ filter: filterValue });
+    });
+})

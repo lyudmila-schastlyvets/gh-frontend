@@ -3,14 +3,14 @@
 
   li {
     float: left;
-    margin: 0 5px;
+    margin: 0 2px;
 
     a {
       display: block;
-      width: 50px;
-      height: 49px;
+      width: 40px;
+      height: 39px;
       font-size: 22px;
-      line-height: 49px;
+      line-height: 39px;
       text-align: center;
 
       &.facebook-icon {
@@ -53,5 +53,20 @@
     clear: both;
     display: block;
     content: '';
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .social-links {
+    li {
+      margin: 0 5px;
+
+      a {
+        width: 50px;
+        height: 49px;
+        font-size: 22px;
+        line-height: 49px;
+      }
+    }
   }
 }

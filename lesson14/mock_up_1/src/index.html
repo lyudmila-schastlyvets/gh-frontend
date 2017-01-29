@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>ProJex</title>
+        <title>Singular</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style/vendor.css">
@@ -19,8 +19,11 @@
                     <a href="#menuExpand"><i class="fa fa-bars" aria-hidden="true"></i></a>
                 </div>
                 <nav class="main-nav">
+                    <div class="close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
                     <ul class="navigation menu">
-                        <li class="active"><a href="#about">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#services">Skills</a></li>
                         <li><a href="#portfolio">Gallery</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -36,7 +39,11 @@
                         <p class="description">
                             Design is not making beauty, beauty emerges from selection, affinities, integration, love.
                         </p>
-                        <a href="#intro" class="cta-button">Introduction</a>
+                        <a href="#intro" class="cta-button">
+                            <span>Introduction</span>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -50,56 +57,248 @@
                 </p>
             </div>
         </section>
-        <section>
+        <section class="section download">
             <div class="wrapper">
-                <p class="description">
+                <p class="description light">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                 </p>
-                <a href="#">Free Download</a>
+                <a href="#" class="download-btn">Free Download</a>
             </div>
         </section>
         <section class="section about" id="about">
             <div class="wrapper">
-                <h2 class="section-title">About Singular</h2>
-                <p>
+                <h2 class="section-title light">About Singular</h2>
+                <p class="description">
                     Singular is a single page website PSD template for creatives &
                     agencies. It can be downloaded for free and used with alink back!
                 </p>
                 <ul class="features-list">
                     <li>
-                        <h3>E-Commerce Ready</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <i class="own-icon icon-Basket" aria-hidden="true"></i>
+                        <div class="content">
+                            <h3>E-Commerce Ready</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
                     </li>
                     <li>
-                        <h3>Powerful SEO Features</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur elit. </p>
+                        <i class="own-icon icon-Laptop"></i>
+                        <div class="content">
+                            <h3>Powerful SEO Features</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit. </p>
+                        </div>
                     </li>
                     <li>
-                        <h3>Secure Encryption</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <i class="own-icon icon-Locked"></i>
+                        <div class="content">
+                            <h3>Secure Encryption</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="section services">
             <div class="wrapper">
-                <h2 class="section-title"></h2>
+                <h2 class="section-title light">Services</h2>
                 <ul class="service-list">
                     <li class="single-service">
-                        <h3></h3>
-                        <p></p>
+                        <div class="service-heading">
+                            <i class="own-icon icon-expand"></i>
+                            <h3>Responsive Layout</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent et ipsum tellus, vitae sagittis enim.
+                        </p>
+                    </li>
+                    <li class="single-service">
+                        <div class="service-heading">
+                            <i class="own-icon icon-menu"></i>
+                            <h3>HTML5 / CSS3</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent et ipsum tellus, vitae sagittis enim.
+                        </p>
+                    </li>
+                    <li class="single-service">
+                        <div class="service-heading">
+                            <i class="own-icon icon-leaf"></i>
+                            <h3>Modern & Clean</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent et ipsum tellus, vitae sagittis enim.
+                        </p>
+                    </li>
+                    <li class="single-service">
+                        <div class="service-heading">
+                            <i class="own-icon icon-pencil"></i>
+                            <h3>Eassily Customisable</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent et ipsum tellus, vitae sagittis enim.
+                        </p>
+                    </li>
+                    <li class="single-service">
+                        <div class="service-heading">
+                            <i class="own-icon icon-zoom-plus"></i>
+                            <h3>SEO Friendly</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent et ipsum tellus, vitae sagittis enim.
+                        </p>
+                    </li>
+                    <li class="single-service">
+                        <div class="service-heading">
+                            <i class="own-icon icon-code"></i>
+                            <h3>Valid Markup</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent et ipsum tellus, vitae sagittis enim.
+                        </p>
+                    </li>
+                    <li class="single-service">
+                        <div class="service-heading">
+                            <i class="own-icon icon-mustache"></i>
+                            <h3>Premium Support</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent et ipsum tellus, vitae sagittis enim.
+                        </p>
+                    </li>
+                    <li class="single-service">
+                        <div class="service-heading">
+                            <i class="own-icon icon-tablet"></i>
+                            <h3>Lovely Design</h3>
+                        </div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent et ipsum tellus, vitae sagittis enim.
+                        </p>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="portfolio section" id="portfolio">
             <div class="wrapper">
-                <h2 class="section-title">Featured Work</h2>
-
-                <ul class="portfolio-images">
+                <h2 class="section-title light">Featured Work</h2>
+                <div id="options">
+                    <div class="filter-group button-group filter-button-group">
+                        <button class="filter filter-all active" data-filter="*">View all</button>
+                        <button class="filter filter-websites" data-filter=".web-item">Websites</button>
+                        <button class="filter filter-freebies" data-filter=".feebies-item">Freebies</button>
+                    </div>
+                </div>
+                <ul class="portfolio-images" id="container">
+                   <li class="portfolio-item feebies-item">
+                       <div class="portfolio-image">
+                           <img src="images/portfolio-1.png" alt="image">
+                       </div>
+                       <div class="overlay">
+                           <div class="overlay-border">
+                               <div class="content">
+                                   <h3 class="overlay-title">A Beautiful Heading</h3>
+                                   <p class="freebies">Freebies</p>
+                               </div>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="portfolio-item web-item">
+                       <div class="portfolio-image">
+                           <img src="images/portfolio-2.png" alt="image">
+                       </div>
+                       <div class="overlay">
+                           <div class="overlay-border">
+                               <div class="content">
+                                   <h3 class="overlay-title">A Beautiful Heading</h3>
+                                   <p class="freebies">Freebies</p>
+                               </div>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="portfolio-item feebies-item">
+                       <div class="portfolio-image">
+                           <img src="images/portfolio-3.png" alt="image">
+                       </div>
+                       <div class="overlay">
+                           <div class="overlay-border">
+                               <div class="content">
+                                   <h3 class="overlay-title">A Beautiful Heading</h3>
+                                   <p class="freebies">Freebies</p>
+                               </div>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="portfolio-item feebies-item">
+                       <div class="portfolio-image">
+                           <img src="images/portfolio-4.png" alt="image">
+                       </div>
+                       <div class="overlay">
+                           <div class="overlay-border">
+                               <div class="content">
+                                   <h3 class="overlay-title">A Beautiful Heading</h3>
+                                   <p class="freebies">Freebies</p>
+                               </div>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="portfolio-item ">
+                       <div class="portfolio-image">
+                           <img src="images/portfolio-5.png" alt="image">
+                       </div>
+                       <div class="overlay">
+                           <div class="overlay-border">
+                               <div class="content">
+                                   <h3 class="overlay-title">A Beautiful Heading</h3>
+                                   <p class="freebies">Freebies</p>
+                               </div>
+                           </div>
+                       </div>
+                   </li>
                    <li class="portfolio-item">
-
+                       <div class="portfolio-image">
+                           <img src="images/portfolio-6.png" alt="image">
+                       </div>
+                       <div class="overlay">
+                           <div class="overlay-border">
+                               <div class="content">
+                                   <h3 class="overlay-title">A Beautiful Heading</h3>
+                                   <p class="freebies">Freebies</p>
+                               </div>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="portfolio-item">
+                       <div class="portfolio-image">
+                           <img src="images/portfolio-7.png" alt="image">
+                       </div>
+                       <div class="overlay">
+                           <div class="overlay-border">
+                               <div class="content">
+                                   <h3 class="overlay-title">A Beautiful Heading</h3>
+                                   <p class="freebies">Freebies</p>
+                               </div>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="portfolio-item">
+                       <div class="portfolio-image">
+                           <img src="images/portfolio-8.png" alt="image">
+                       </div>
+                       <div class="overlay">
+                           <div class="overlay-border">
+                               <div class="content">
+                                   <h3 class="overlay-title">A Beautiful Heading</h3>
+                                   <p class="freebies">Freebies</p>
+                               </div>
+                           </div>
+                       </div>
                    </li>
                 </ul>
             </div>
@@ -117,8 +316,10 @@
                             <img src="images/member-1.png" alt="">
                         </div>
                         <div class="overlay">
-                            <h3 class="name">John Donga</h3>
-                            <span>Founder</span>
+                            <div class="overlay-content">
+                                <h3 class="name">John Donga</h3>
+                                <span class="job">Founder</span>
+                            </div>
                         </div>
                     </li>
                     <li class="team-member">
@@ -126,8 +327,10 @@
                             <img src="images/member-2.png" alt="">
                         </div>
                         <div class="overlay">
-                            <h3 class="name">John Donga</h3>
-                            <span>Founder</span>
+                            <div class="overlay-content">
+                                <h3 class="name">John Donga</h3>
+                                <span class="job">Founder</span>
+                            </div>
                         </div>
                     </li>
                     <li class="team-member">
@@ -135,17 +338,16 @@
                             <img src="images/member-3.png" alt="">
                         </div>
                         <div class="overlay">
-                            <h3 class="name">John Donga</h3>
-                            <span>Founder</span>
+                            <div class="overlay-content">
+                                <h3 class="name">John Donga</h3>
+                                <span class="job">Founder</span>
+                            </div>
                         </div>
                     </li>
                     <li class="team-member">
-                        <div class="team-image">
-                            <img src="images/" alt="">
-                        </div>
-                        <div class="overlay">
-                            <h3 class="name">John Donga</h3>
-                            <span>Founder</span>
+                        <div class="content">
+                            <p class="hiring">We are Hiring!</p>
+                            <button class="apply-btn">Apply</button>
                         </div>
                     </li>
                 </ul>
@@ -185,6 +387,7 @@
             </div>
         </footer>
         <script src="js/vendor.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
