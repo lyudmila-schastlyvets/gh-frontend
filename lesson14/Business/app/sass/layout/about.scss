@@ -1,0 +1,22 @@
+.about {
+  overflow: hidden;
+  text-align: center;
+  li {
+    margin-bottom: 30px;
+    h3 {
+      margin: 15px 0;
+      font: 700 22px $font-primary;
+    }
+    p {
+      font: 400 14px/22px $font-content;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    li {
+      margin-bottom: 0;
+    }
+  }
+}

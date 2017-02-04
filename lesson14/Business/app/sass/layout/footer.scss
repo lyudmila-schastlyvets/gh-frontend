@@ -1,0 +1,11 @@
+.foot {
+  background-color: #515151;
+  overflow: hidden;
+  padding: 25px 15px;
+  color: #cecece;
+  .copy {
+    display: block;
+    text-align: center;
+    font: 400 14px/17px $font-content;
+  }
+}

@@ -1,0 +1,36 @@
+.btn {
+  display: block;
+  min-width: 120px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: transparent;
+  font: 700 12px 'Aria';
+  text-transform: uppercase;
+  color: #000;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+  &:hover, &.active-btn {
+    outline: none;
+    background-color: #000;
+   	color: #fff;
+  }
+  &:focus {
+    outline: none;
+    color: #fff;
+  }
+  &:active:focus {
+    outline: none;
+   	color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    min-width: 150px;
+    height: 50px;
+    padding: 15px;
+    font-size: 14px;
+  }
+}

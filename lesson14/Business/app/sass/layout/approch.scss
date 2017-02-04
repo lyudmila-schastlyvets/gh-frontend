@@ -1,0 +1,126 @@
+.approch {
+  &.section {
+    padding-bottom: 35px;
+  }
+  background: #f3f3f3;
+  overflow: hidden;
+  li {
+    display: table;
+    vertical-align: middle;
+    padding: 0;
+    background: #fff;
+    margin-bottom: 30px;
+    overflow: hidden;
+    .approch-img {
+      padding: 0;
+      position: relative;
+      .step {
+        position: absolute;
+        border: 2px solid #ffffff;
+        border-radius: 2px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        color: #fff;
+        background: $color-primary;
+        p {
+          font: 400 20px $font-primary;
+        }
+        p::first-letter {
+          font-family: 'Georgia' sans-serif;
+          font-weight: 700;
+          font-size: 60px;
+        }
+      }
+    }
+    img {
+      width: 100%;
+    }
+    &:nth-child(odd) {
+      .approch-img {
+        .step {
+          bottom: 0;
+          left: 50%;
+          transform: translateY(50%) translateX(-50%);
+        }
+      }
+    }
+    &:nth-child(even) {
+      .approch-img {
+        .step {
+          top: 0;
+          left: 50%;
+          transform: translateY(-50%) translateX(-50%);
+        }
+      }
+      .approch-content {
+        text-align: right;
+      }
+    }
+    .approch-content {
+      width: 90%;
+      margin: 60px auto;
+      h3 {
+        font: 700 18px/36px $font-primary;
+      }
+      p {
+        font: 400 14px/22px $font-content;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .approch {
+    .section {
+      padding-bottom: 50px;
+    }
+    li {
+      &:nth-child(odd) {
+        .approch-img {
+          .step {
+            bottom: 50%;
+            left: auto;
+            right: 0;
+            transform: translateY(50%) translateX(50%);
+          }
+        }
+      }
+      &:nth-child(even) {
+        .approch-img {
+          .step {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) translateX(-50%);
+          }
+        }
+      }
+      .approch-content {
+        width: 81%;
+        margin: 0 auto;
+        transform: translateY(20%);
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .approch {
+    li {
+      .approch-content {
+        width: 76%;
+        transform: translateY(35%);
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .approch {
+    li {
+      .approch-content {
+        transform: translateY(80%);
+      }
+    }
+  }
+}

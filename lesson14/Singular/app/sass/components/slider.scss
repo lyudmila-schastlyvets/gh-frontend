@@ -1,0 +1,29 @@
+.slider {
+  .slick-dots {
+    li {
+      padding: 0 8px;
+      margin-bottom: 40px;
+      width: 25px;
+      height: 4px;
+      button {
+        width: 25px;
+        height: 4px;
+        padding: 0;
+        background-color: #8f8f8f;
+        transition: 0.2s all ease-out;
+        cursor: pointer;
+        &:hover {
+         // background-color: #000;
+        }
+      }
+    }
+  }
+  .slick-dots li button:before {
+    content: '';
+  }
+  .slick-dots li.slick-active button {
+    //background-color: #000;
+  }
+}
+
+.slick-slide:focus { outline: none; }

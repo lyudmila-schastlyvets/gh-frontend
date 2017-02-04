@@ -1,0 +1,12 @@
+.clients {
+  background: #f4f4f4;
+  overflow: hidden;
+  color: #000;
+  .flex-content {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+      margin: 30px;
+    }
+  }
+}

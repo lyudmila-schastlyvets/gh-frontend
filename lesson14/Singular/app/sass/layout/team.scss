@@ -1,0 +1,94 @@
+.team {
+  color: #000;
+  p {
+    text-align: center;
+    font: 300 22px/36px $font-primary;
+    margin-bottom: 70px;
+  }
+  .our-team {
+    li {
+      text-align: center;
+      position: relative;
+      padding: 0;
+      margin-bottom: 30px;
+      overflow: hidden;
+      .hover {
+        opacity: 0;
+        margin-left: 5%;
+        position: absolute;
+        background: rgba(34,34,34,0.5);
+        width: 90%;
+        height: 99.5%;
+        color: $color-font;
+        transition: 0.5s all ease-out;
+        h3 {
+          text-align: center;
+          margin-top: 100%;
+          font: 400 23px/35px $font-primary;
+        }
+        span {
+          display: block;
+          text-align: center;
+          font: 400 18px/20px $font-primary;
+        }
+      }
+      &:hover .hover {
+        opacity: 1;
+      }
+    }
+    .hiring {
+      h4 {
+        margin-top: 40%;
+        font: 400 23px/35px $font-primary;
+      }
+      .active {
+        margin-left: 5%;
+        position: absolute;
+        border: 1px solid $color-primary;
+        width: 90%;
+        height: 100%;
+      }
+      .btn-team {
+        width: 140px;
+        height: 40px;
+        margin-top: 30%;
+        border-radius: 0;
+        border: 3px solid $color-primary;
+        background: transparent;
+        font: 700 16px $font-primary;
+        transition: 0.3s all ease-out;
+        cursor: pointer;
+        &:hover, &.active-btn {
+          outline: none;
+        }
+        &:focus {
+          outline: none;
+        }
+        &:active:focus {
+          outline: none;
+        }
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
+    }
+    img {
+      width: 90%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .team {
+    .our-team {
+      .hiring {
+        .btn-team {
+          width: 179px;
+          height: 59px;
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}

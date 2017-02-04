@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(34,34,34,0.95), rgba(34,34,34,0.95)), url("../img/bg-hero.jpg") 50% 0 /cover no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  .intro-hero {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    .welcome {
+      font: 700 30px/50px $font-primary;
+      text-transform: uppercase;
+    }
+    .intro {
+       display: block;
+       font: 400 16px/20px $font-primary;
+    }
+  }
+  .scroll {
+    position: absolute;
+    display: block;
+    font: 400 14px/20px $font-scroll;
+    text-transform: uppercase;
+    bottom: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    &:after {
+      position: absolute;
+      display: block;
+      content: '\f078';
+      font-family: FontAwesome;
+      line-height: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    .intro-hero {
+      .welcome {
+        font-size: 40px;
+      }
+      .intro {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    .intro-hero {
+      .welcome {
+        line-height: 70px;
+      }
+    }
+  }
+}

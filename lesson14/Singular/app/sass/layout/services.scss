@@ -1,0 +1,36 @@
+.services {
+  background: #d11f2d;
+  overflow: hidden;
+  li {
+    margin-bottom: 60px;
+    p {
+      font: 400 13px/18px $font-primary;
+    }
+  }
+  .icon-services {
+    width: 42px;
+    height: 42px;
+    margin: 0 15px 15px;
+    padding: 12px 14px;
+    border-radius: 2px;
+    background: #fff;
+    i {
+      text-align: center;
+      color: #000;
+    }
+  }
+  h3 {
+    font: 700 16px/40px $font-primary;
+  }
+}
+
+@media (min-width: 992px) {
+  .services {
+    &.section {
+      padding: 100px 15px 10px;
+    }
+    li {
+      margin-bottom: 90px;
+    }
+  }
+}

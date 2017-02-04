@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  text-align: center;
+  background: url("../img/bg-hero.png") 65% 90% /cover no-repeat, #1287bf;
+  padding: 120px 0 170px;
+  overflow: hidden;
+  color: #fff;
+  z-index: 7;
+  .welcome {
+    font: 700 48px $font-primary;
+  }
+  .intro {
+    display: block;
+    font: 300 30px $font-primary;
+    margin-bottom: 30px;
+  }
+  .btn-hero {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    border: 0;
+    background-color: #f8cd53;
+    border-radius: 6px;
+    font: 700 18px $font-primary;
+    transition: 0.3s all ease-out;
+    text-transform: uppercase;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background: $color-primary;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 180px 0 230px;
+    .btn-hero {
+      width: 330px;
+      height: 69px;
+      font-size: 23px;
+    }
+  }
+}

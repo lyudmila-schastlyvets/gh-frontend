@@ -1,0 +1,44 @@
+.free {
+  background: linear-gradient(rgba(34,34,34,0.5), rgba(34,34,34,0.5)), url("../img/bg-free.jpg") 50% 0 /cover no-repeat;
+  overflow: hidden;
+  p {
+    text-align: center;
+    font: 300 20px/36px $font-primary;
+  }
+  .btn-free {
+    display: block;
+    margin: 40px auto 0;
+    min-width: 250px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 0;
+    border: 3px solid #fff;
+    background: transparent;
+    font: 400 25px $font-primary;
+    transition: 0.3s all ease-out;
+    cursor: pointer;
+    &:hover, &.active-btn {
+      outline: none;
+      background-color: #fff;
+      color: #000;
+    }
+    &:focus {
+      outline: none;
+      color: #000;
+    }
+    &:active:focus {
+      outline: none;
+      color: #000;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .btn-free {
+      margin-top: 60px;
+      min-width: 390px;
+      height: 80px;
+      padding: 15px;
+      font-size: 30px;
+    }
+  }
+}
