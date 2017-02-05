@@ -1,5 +1,11 @@
 .blog {
   background-color: #ececec;
+  padding-top: 60px;
+
+  &:before {
+    border-left: 49vw solid #ececec;
+    border-right: 49vw solid #ececec;
+  }
 
   .section-title {
     margin-bottom: 46px;

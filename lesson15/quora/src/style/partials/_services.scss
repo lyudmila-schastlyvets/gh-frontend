@@ -1,6 +1,14 @@
 .services {
-  background: url("../images/bg-services.png") center center no-repeat;
+  background: #ececec url("../images/bg-services.png") center center no-repeat;
   background-size: cover;
+  padding-top: 150px;
+
+  &:before {
+    top: 0;
+    border-top: 102px solid white;
+    border-left: 49vw solid transparent;
+    border-right: 49vw solid transparent;
+  }
 }
 
 .service-list {

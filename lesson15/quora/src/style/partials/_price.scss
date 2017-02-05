@@ -1,4 +1,11 @@
 .pricing {
+  padding-top: 70px;
+
+  &:before {
+    border-left: 49vw solid #fff;
+    border-right: 49vw solid #fff;
+  }
+
   .section-title {
     margin-bottom: 80px;
   }

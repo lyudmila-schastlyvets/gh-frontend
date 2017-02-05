@@ -1,6 +1,11 @@
 .prefooter {
   background-color: #204359;
-  padding-top: 145px;
+  padding-top: 41px;
+
+  &:before {
+    border-left: 49vw solid #204359;
+    border-right: 49vw solid #204359;
+  }
 }
 
 .footer-list-title {
