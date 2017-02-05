@@ -7,25 +7,28 @@ $(function () {
     $(".digit").click(function () {
       var currentShow = $(".input-field").val();
 
-      if ((currentShow == "0" && $(this).text()!=".") || flag) {
-          currentShow = $(this).text();
-          change_flag(false);
-      }
+        if ((currentShow == "0" && $(this).text()!=".") || flag) {
+            currentShow = $(this).text();
+            if (currentShow == ".") {
+                currentShow = '0.';
+            }
+            change_flag(false);
+        }
 
-      else {
-          currentShow+=$(this).text();
-      }
+        else {
+            currentShow+=$(this).text();
+        }
 
-      var isFloat = currentShow.split('.').length;
+        var isFloat = currentShow.split('.').length;
 
-      if (isFloat == 3) {
+        if (isFloat == 3) {
           currentShow = parseFloat(currentShow);
-      }
-      else if (isFloat == 1){
+        }
+        else if (isFloat == 1){
           currentShow = parseInt(currentShow);
-      }
+        }
 
-      $(".input-field").val(currentShow);
+        $(".input-field").val(currentShow);
     });
 
     $('.operator').click(function () {
