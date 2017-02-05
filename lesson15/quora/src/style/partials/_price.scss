@@ -1,0 +1,92 @@
+.pricing {
+  .section-title {
+    margin-bottom: 80px;
+  }
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.price-container {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+
+  .header-container {
+    padding: 30px 5px;
+    border-bottom: 1px solid #ffefb1;
+  }
+
+  .icon-checked {
+    display: inline;
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .title {
+    color: white;
+    font: 700 26px/72px $main-font;
+    text-transform: uppercase;
+  }
+
+  .price {
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
+
+  .money {
+    font: 24px/56px $main-font;
+  }
+
+  .sum {
+    font: 800 48px/72px $main-font;
+  }
+
+  .divider {
+    align-self: flex-end;
+    font: 24px/50px $main-font;
+    text-transform: uppercase;
+  }
+
+  .per-month {
+    align-self: flex-end;
+    font: 14px/44px $main-font;
+    text-transform: lowercase;
+  }
+
+  .benefit-list {
+    padding: 30px;
+
+    p {
+      color: black;
+      font: 18px/72px $main-font;
+    }
+  }
+}
+
+.yellow-container {
+  background-color: #fc0;
+}
+
+.blue-container {
+  background-color: #009bff;
+  border: 1px solid #009bff;
+  box-shadow: 0 0 7.5px 0.5px rgba(0, 0, 0, 0.23);
+}
+
+@media only screen and (min-width: 768px) {
+  .section-content {
+    flex-direction: row;
+  }
+
+  .price-container {
+    margin-bottom: 0;
+    width: 300px;
+  }
+}
