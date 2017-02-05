@@ -1,0 +1,43 @@
+.services {
+  background: url("../images/bg-services.png") center center no-repeat;
+  background-size: cover;
+}
+
+.service-list {
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image {
+      margin-top: 36px;
+    }
+
+    a {
+      color: #fff;
+      font: 500 18px/28px "Raleway", sans-serif;
+    }
+
+    .own-icon {
+      font-size: 44px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .service-list {
+
+    li {
+
+      .image {
+        margin-top: 12px;
+      }
+
+      .middle-service {
+        margin-top: 86px;
+      }
+    }
+  }
+}

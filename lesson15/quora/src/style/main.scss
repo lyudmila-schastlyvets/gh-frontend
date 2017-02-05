@@ -1,0 +1,17 @@
+@import 'base/_reset';
+@import 'base/_fonts';
+@import 'base/_base';
+
+@import 'components/_buttons';
+@import 'components/_social-icons';
+
+@import 'layout/_header';
+@import 'layout/_prefooter';
+@import 'layout/_footer';
+
+@import 'partials/_hero';
+@import 'partials/_about';
+@import 'partials/_slider';
+@import 'partials/_services';
+@import 'partials/_blog';
+@import 'partials/_price';
