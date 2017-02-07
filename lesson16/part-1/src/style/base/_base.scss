@@ -1,0 +1,43 @@
+$main-font: "Lato", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+
+body {
+  background-color: #a4adff;
+  font-family: $main-font;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+input,
+textarea{
+  background-color: transparent;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  color: #3c5a98;
+  font: 700 24px/30px $main-font;
+  text-transform: uppercase;
+  text-align: center;
+}
+
