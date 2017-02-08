@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,600,700,700i,800">
+        <link rel="stylesheet" href="style/vendor.css">
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+        <section class="form">
+            <div class="container">
+                <h2 class="section-title">Form</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>About you:</legend>
+                        <ul>
+                            <li>
+                                <label for="name">First name:</label>
+                                <input type="text" name="name" id="name" required>
+                            </li>
+                            <li>
+                                <label for="surname">Last name:</label>
+                                <input type="text" name="surname" id="surname">
+                            </li>
+                            <li>
+                                Sex:
+                                <input type="radio" name="sex" id="male" value="male" checked><label for="male">male</label>
+                                <input type="radio" name="sex" id="female" value="female"><label for="female">female</label>
+                            </li>
+                            <li>
+                                <span>Age:</span>
+                                <input type="number" name="age" id="age" min="1" max="100"><label for="age"> years</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>More information:</legend>
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <input type="date" name="date" id="date"><label for="date"> Date of birth</label>
+                                    </li>
+                                    <li>
+                                        <input type="text" name="status" id="status"><label for="status"> Family status</label>
+                                    </li>
+                                    <li>
+                                        <input type="text" name="social" id="social"><label for="social"> Social status</label>
+                                    </li>
+                                    <li>
+                                        <input type="text" name="location" id="location"><label for="location"> Residence</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="label">What do you usually do on weekends:</span>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="rest[]" id="sleep" value="1"><label for="sleep"> Sleep</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="rest[]" id="walk" value="2"><label for="walk"> Spend time with friends</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="rest[]" id="fishing" value="3"><label for="fishing"> Go fishing</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="rest[]" id="play" value="4"><label for="play"> Play games</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="label">How many books have you read in your life:</span>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="books" id="first" value="0-10"><label for="first"> 0-10</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="books" id="second" value="11-20"><label for="second"> 11-20</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="books" id="third" value="21-50"><label for="third"> 21-50</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="books" id="fourth" value="50+"><label for="fourth"> 50+</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label for="comment" class="textarea-label">Add your comment:</label>
+                                <textarea name="comment" title="comment" id="comment"></textarea>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="submit" name="submit" value="Отправить" class="submit">
+                </form>
+            </div>
+        </section>
+        <script src="js/vendor.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

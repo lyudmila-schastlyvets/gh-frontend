@@ -64,11 +64,94 @@ $(function () {
     });
 
     $(document).on('click', '.data-about-me', function () {
-        console.log($(this).width(), $(this).height(), $(this).offset(),
+        console.log($(this).width(),
+            $(this).height(),
+            $(this).offset(),
             $(this), $(this).parent(),
             $(this).parent().next().find('.button'),
             $(this).parent().prev().find('.button'),
             $(this).text());
     });
+
+    // methods
+
+    $(".data-btn").click(function(){
+        $(this).data("greeting", "Hello World!");
+        alert($(this).data("greeting"));
+    });
+
+    $(".detach").click(function () {
+        $(".detach-example").detach();
+    });
+
+    $(".eq-btn").click(function () {
+        $(".part-2 li").eq(2).children('button').css({"background-color": "white", 'color': "#0f13ff"});
+    });
+
+    $(".has-class").click(function(){
+        alert($(this).hasClass("has-class"));
+    });
+
+    $(".html-btn").click(function(){
+        $(this).html("<p>New name!</p>");
+    });
+
+    $(".index-btn").click(function () {
+        alert("Index of this button is " + $(".part-2 li .button").index($(this)));
+    });
+
+    $(".off-btn").click(function () {
+        alert("Click disabled on offBtn!");
+        $(this).off('click');
+    });
+
+    $(".on-btn").dblclick(function () {
+        alert("Click is able on onBtn!");
+        $(this).on('click', function () {
+            $(this).toggleClass("border-new");
+            $(this).off('dblclick');
+        });
+    });
+
+    $(".prop-btn").click(function () {
+       $(this).prop("disabled", true);
+    });
+
+    $(".remove-btn").click(function () {
+       $(this).parent().remove();
+    });
+
+    $(".remove-attr").click(function () {
+       $(this).removeAttr("id");
+    });
+
+    $( window ).resize(function() {
+        console.log("Resized!")
+    });
+
+    $( window ).scroll(function() {
+        $(".scroll-btn").parent().fadeOut( "slow" );
+    });
+
+    $(".scroll-top").click(function () {
+        var top = $(".part-1").offset().top;
+       $("body").animate({scrollTop: top}, 1500);
+    });
+
+    $(".slide-up-btn").click(function(){
+        $(".test-btn").slideUp();
+    });
+
+    $(".slide-down-btn").click(function(){
+        $(".test-btn").slideDown();
+    });
+
+    $(".slide-toggle-btn").click(function(){
+        $(".test-btn").slideToggle();
+    });
+
+
+
+
 
 });
