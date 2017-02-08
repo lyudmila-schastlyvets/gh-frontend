@@ -64,13 +64,18 @@ $(function () {
     });
 
     $(document).on('click', '.data-about-me', function () {
-        console.log($(this).width(),
-            $(this).height(),
-            $(this).offset(),
-            $(this), $(this).parent(),
-            $(this).parent().next().find('.button'),
-            $(this).parent().prev().find('.button'),
-            $(this).text());
+        var attribute_names = $.map(this.attributes, function (attribute) {
+            attribute_names = ' '+attribute.name+' = '+attribute.value + ', ';
+            return attribute_names;
+        });
+
+            console.log("Width: " + $(this).width() + "px, " +
+                "height: " + $(this).height() + "px, " +
+                "position-left: " + $(this).offset().left + "px, " +
+                "position-top: " + $(this).offset().top + "px, " +
+                "Attributes: " + attribute_names + 'parent element: ' + $(this).parent().prop("tagName") + ', ' +
+                "previous button: " + $(this).parent().prev().find('.button').html() + ', ' +
+                "button text: " + $(this).text());
     });
 
     // methods
@@ -150,8 +155,45 @@ $(function () {
         $(".test-btn").slideToggle();
     });
 
+    // Forms
 
+    $("select").change(function () {
+        $( "select option:selected" ).each(function() {
+            console.log($(this).text());
+        });
+    });
 
+    $("input[type=checkbox]").change(function () {
+        $('input:checkbox:checked').each(function() {
+            console.log($(this).val());
+        });
+    });
 
+    $("input[type=text], input[type=date],input[type=number], input[type=radio]").change(function () {
+        $(this).each(function() {
+            console.log($(this).val());
+        });
+    });
+
+    $('form').submit(function() {
+        console.log($(this).serializeArray());
+        return false;
+    });
+
+    $("#name").change(function() {
+        $("#surname").val($(this).val());
+    });
+
+    $("#status").keypress(function(){
+        console.log($(this).val());
+    });
+
+    $("#location").keydown(function(){
+        console.log($(this).val());
+    });
+
+    $("#name").keyup(function(){
+        $("#surname").val($(this).val());
+    });
 
 });

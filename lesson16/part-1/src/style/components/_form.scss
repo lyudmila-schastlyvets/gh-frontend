@@ -4,7 +4,9 @@
 
 form {
   padding: 20px;
-  //background-color: rgba(255, 255, 255, 0.59);
+  > * {
+    outline: none;
+  }
 }
 
 fieldset {
@@ -23,6 +25,11 @@ legend {
   font: 600 24px/24px $secondary-font;
 }
 
+input {
+  border-radius: 6px;
+  border: 2px solid #e41058;
+}
+
 .submit {
   padding: 10px 30px;
   border-radius: 6px;
@@ -35,4 +42,12 @@ legend {
     background-color: white;
     color: #e41058;
   }
+}
+
+.label {
+  text-align: left;
+}
+
+.label-block {
+  display: block;
 }
