@@ -30,7 +30,7 @@ textarea {
 }
 
 section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .section-title {
@@ -41,3 +41,16 @@ section {
   text-align: center;
 }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  li {
+    margin-bottom: 30px;
+  }
+}
+
+.hide-span {
+  display: none;
+}
