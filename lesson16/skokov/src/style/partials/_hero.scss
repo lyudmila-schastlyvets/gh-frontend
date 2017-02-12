@@ -1,0 +1,264 @@
+.hero {
+  background: #ececec url("../images/slider-bg.png") center center no-repeat;
+  background-size: cover;
+  padding: 22px 0;
+  margin-top: 108px;
+
+  .hero-content {
+    padding: 0 15px;
+
+    .hero-image {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.hero-information {
+  padding-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .main-title {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: black;
+    font: 400 26px/40px $main-font;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+      margin-bottom: 8px;
+      padding: 0 12px;
+      background-color: #ffea00;
+    }
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+    padding-bottom: 60px;
+    color: white;
+    font: 400 16px/28px $main-font;
+
+    span {
+      margin-bottom: 1px;
+      padding: 0 6px;
+      background-color: #414146;
+    }
+  }
+
+  .button {
+    margin-bottom: 80px;
+  }
+}
+
+// hero slider
+
+.hero {
+  .fade_slide {
+    height: 100%;
+    outline: none;
+  }
+
+  .slick-slide {
+    outline: none;
+  }
+
+  .slick-arrow {
+    display: none !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 100px;
+    background-color: black;
+    border: none;
+    outline: none;
+    font-size: 0;
+
+    &:before {
+      font-family: icomoon, sans-serif;
+      display: block;
+      color: #fff;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &:hover:before {
+      color: #ffea00;
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+
+    &:before {
+      content: '\e900';
+    }
+  }
+
+  .slick-next {
+    right: 0;
+
+    &:before {
+      content: '\e901';
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+      position: relative;
+      margin: 0 1px;
+      width: 26px;
+      height: 26px;
+      background-color: #414146;
+
+      &.slick-active:after {
+        position: absolute;
+        display: block;
+        content: '';
+        top:3px;
+        left:3px;
+        width: 20px;
+        height: 20px;
+        background-color: #ffea00;
+      }
+    }
+
+    button {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .hero-information {
+    .main-title {
+      font: 400 36px/56px $main-font;
+    }
+    .description {
+      font: 400 18px/26px $main-font;
+    }
+    .button {
+      font: 400 18px/36px $main-font;
+    }
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .hero-information {
+    .main-title {
+      font: 400 42px/56px $main-font;
+    }
+    .description {
+      font: 400 20px/26px $main-font;
+    }
+    .button {
+      font: 400 20px/36px $main-font;
+    }
+  }
+}
+
+@media only screen and (min-width: 728px) {
+  .hero {
+    .hero-content {
+      padding: 0 52px;
+    }
+    .slick-arrow {
+      display: block !important;
+    }
+  }
+  .hero-information {
+    .main-title {
+      font: 400 50px/56px $main-font;
+    }
+    .description {
+      font: 400 20px/26px $main-font;
+    }
+    .button {
+      align-self: flex-end;
+      margin: 0 160px 150px;
+      font: 400 20px/36px $main-font;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero {
+    .hero-content {
+      display: flex;
+    }
+  }
+  .hero-information {
+    .main-title {
+      font: 400 60px/77px $main-font;
+    }
+    .description {
+      font: 400 22px/33px $main-font;
+    }
+    .button {
+      font: 400 22px/38px $main-font;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    margin-top: 160px;
+    .hero-content {
+      .hero-image {
+        display: block;
+        max-width: 52%;
+        width: 717px;
+        margin-left: -77px;
+      }
+    }
+  }
+  .hero-information {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1340px) {
+  .hero {
+    .hero-content {
+      display: flex;
+      padding: 0 52px;
+
+      .hero-image {
+        display: block;
+        max-width: 52%;
+        width: 717px;
+        margin-left: -77px;
+      }
+    }
+  }
+  .hero-information {
+    padding-top: 100px;
+    .main-title {
+      font: 400 70px/77px $main-font;
+    }
+    .description {
+      font: 400 24px/33px $main-font;
+    }
+    .button {
+      align-self: flex-end;
+      margin: 0 160px 150px;
+      font: 400 24px/38px $main-font;
+    }
+  }
+}
