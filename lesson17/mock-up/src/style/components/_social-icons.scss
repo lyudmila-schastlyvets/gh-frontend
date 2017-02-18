@@ -1,0 +1,47 @@
+.social-links {
+  display: inline-block;
+
+  li {
+    float: left;
+    margin: 0 1px;
+
+    a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: black;
+      font-size: 14px;
+      line-height: 30px;
+      text-align: center;
+      transition: 400ms;
+
+      &:hover {
+        background-color: white;
+
+        .fa {
+          color: black;
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .fa {
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  &:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+}
