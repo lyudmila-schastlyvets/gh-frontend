@@ -1,0 +1,68 @@
+.wrapper {
+	margin: 0 auto;
+	padding: 46px 30px 15px 30px;
+	width: 770px;
+	background: #fff;
+	font-size: 14px;
+}
+h1 {
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: bold;
+}
+fieldset {
+	margin-bottom: 20px;
+	padding: 20px 0 18px 14px;
+	border: 2px groove;
+}
+legend, .text-bold {
+	font-weight: bold;
+}
+h3 {
+	margin-bottom: 28px;
+	font-size: 24px;
+}
+.explanation {
+	margin-bottom: 22px;
+	font-weight: normal;
+}
+.label {
+	display: block;
+	padding: 20px 0;
+	font-weight: bold;
+}
+.spam {
+	padding: 20px 0;
+	font-weight: bold;
+}
+textarea {
+	display: block;
+	width: 350px !important;
+	height: 150px;
+	margin-bottom: 15px;
+}
+.textarea-label {
+	font-weight: bold;
+	margin-top: 20px;
+	display: block;
+}
+input[disabled] {
+	margin-bottom: 20px;
+}
+.make-block {
+	display: block;
+}
+.margin li {
+	margin-bottom: 15px;
+}
+input[type="text"] {
+	width: 250px;
+}
+#status, #social, #location {
+	width: 140px;
+}
+.text-italic {
+	font-style: italic;
+	display: block;
+	font-weight: normal;
+}

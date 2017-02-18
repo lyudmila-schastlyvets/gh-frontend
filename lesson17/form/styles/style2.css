@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    font: 600 28px/30px sans-serif;
+}
+
+table {
+    margin: 5px auto 15px auto;
+    border: 1px outset #afafaf;
+    border-collapse: separate;
+    border-spacing: 3px;
+    font-size: 14px;
+    line-height: 20px;
+}
+th, td {
+    border: 1px inset #afafaf;
+    min-width: 77px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+}
+th {
+    font-weight: bold;
+}
