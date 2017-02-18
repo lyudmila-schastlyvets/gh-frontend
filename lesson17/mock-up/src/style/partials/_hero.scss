@@ -1,0 +1,28 @@
+.hero {
+  height: 850px;
+  background: url("../images/bg-hero.png") center center  no-repeat;
+  background-size: cover;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-title {
+  margin-bottom: 18px;
+  color: #f9fafe;
+  font: 700 72px/72px $secondary-font;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.hero-description {
+  margin-bottom: 86px;
+  color: #f9fafe;
+  font: 400 30px/22px $main-font;
+  text-transform: uppercase;
+  text-align: center;
+}

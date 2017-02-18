@@ -1,0 +1,104 @@
+.destinations {
+  position: relative;
+  padding: 180px 0 80px;
+}
+
+.short-information {
+  position: absolute;
+  top: -70px;
+  left: calc(50% - 15px);
+  transform: translateX(-50%);
+  display: flex;
+  padding: 30px 0;
+  margin: 0 15px;
+  max-width: 1200px;
+  width: calc(100% - 30px);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
+
+  li {
+    padding: 6px 0 12px;
+    width: 25%;
+    border-left: 1px solid rgba(113, 113, 113, 0.3);
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+  .number {
+    display: block;
+    margin-bottom: 12px;
+    color: #262626;
+    font: 700 30px/30px $main-font;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .info-title {
+    color: #717171;
+    font: 400 18px/22px $main-font;
+    text-align: center;
+  }
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-port,
+.single-feature {
+  position: relative;
+  margin-bottom: 30px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px;
+  width: calc(100% - 30px);
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+  border-radius: 5px;
+}
+
+.boats-number {
+  display: inline-block;
+  padding: 0 12px 0 15px;
+  background-color: #e7434e;
+  border-radius: 5px;
+  color: white;
+  font: 700 16px/42px $main-font;
+  text-transform: uppercase;
+
+  .own-icon {
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+
+.overlay-footer {
+  color: white;
+  font-family: $secondary-font;
+  font-weight: 400;
+}
+
+.port {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.country {
+  font-size: 20px;
+  line-height: 20px;
+}

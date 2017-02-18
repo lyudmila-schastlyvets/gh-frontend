@@ -1,20 +1,43 @@
-.button {
-  padding: 0 29px;
-  background-color: black;
-  color: white;
-  font: 400 24px/38px $main-font;
-  border-bottom: 3px solid #ffea00;
-  text-align: center;
+.sign-up-btn {
+  outline: none;
+  width: 146px;
+  border: 1px solid #f9fafe;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #f9fafe;
+  font: 700 16px/38px $secondary-font;
   transition: 400ms;
 
   &:hover {
-    color: black;
-    background-color: #ffea00;
-    outline: none;
-  }
-  &:focus {
-    outline: none;
-    text-decoration: none;
+    background-color: #e7434e;
   }
 }
 
+.search-btn {
+  width: 200px;
+  background-color: #e7434e;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  outline: none;
+  color: white;
+  font: 700 14px/60px $secondary-font;
+  text-transform: uppercase;
+}
+
+.show-more-btn {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid rgba(38, 38, 38, 0.3);
+  border-radius: 5px;
+  background-color: transparent;
+  color: #343434;
+  font: 700 14px/58px $secondary-font;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 400px) {
+  .show-more-btn {
+    width: 310px;
+  }
+}
