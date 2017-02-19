@@ -1,7 +1,6 @@
 .hero {
-  height: 850px;
-  background: url("../images/bg-hero.png") center center  no-repeat;
-  background-size: cover;
+  position: relative;
+  height: 100vh;
 
   .container {
     height: 100%;
@@ -25,4 +24,46 @@
   font: 400 30px/22px $main-font;
   text-transform: uppercase;
   text-align: center;
+}
+
+.fullscreen-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  //overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../images/bg-hero.png') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
 }
