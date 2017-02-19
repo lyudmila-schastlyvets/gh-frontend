@@ -1,4 +1,27 @@
 .features-list {
   padding: 98px 0 86px;
 
+  .price {
+    width: 105px;
+    background-color: #e7434e;
+    border-radius: 5px;
+    color: white;
+    font: 700 16px/42px $main-font;
+    text-align: center;
+  }
+
+  .overlay-footer {
+    .location,
+    .team {
+      color: white;
+      font: 16px/22px $main-font;
+    }
+    .location {
+      margin-right: 30px;
+    }
+    .fa {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
 }

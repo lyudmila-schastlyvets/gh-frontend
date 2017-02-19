@@ -43,6 +43,26 @@ $(document).ready(function() {
         })
     });
 
+    $(".modal").on('click', function (e) {
+        if (!$(e.target).hasClass('modal-content') ) {
+            $(".modal").fadeOut();
+            $('.modal-content .wrapper').children().remove();
+        }
+    });
+
+    $(".openModal").on('click', function () {
+        $(this).next(".modal-hidden").children().clone().appendTo('.modal-content .wrapper');
+        $(".modal").fadeIn();
+
+    });
+
+    $(".close-modal").click (function(){
+        $(".modal").fadeOut();
+        $('.modal-content .wrapper').children().remove();
+    });
+
+
+
     $(function () {
         $(".single-feature").slice(0, 4).show();
         $(".show-more-boats").on('click', function (e) {

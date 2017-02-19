@@ -17,11 +17,22 @@
   width: 200px;
   background-color: #e7434e;
   border-radius: 0 5px 5px 0;
-  border: none;
+  border: 1px solid #e7434e;
   outline: none;
   color: white;
   font: 700 14px/60px $secondary-font;
   text-transform: uppercase;
+  transition: 400ms;
+
+  &:hover {
+    border: 1px solid #fff;
+    border-left: none;
+  }
+
+  .own-icon {
+    margin-right: 10px;
+    display: inline-block;
+  }
 }
 
 .show-more-btn {
@@ -34,10 +45,36 @@
   color: #343434;
   font: 700 14px/58px $secondary-font;
   text-transform: uppercase;
+  transition: 400ms;
+
+  &:hover {
+    background-color: #e7434e;
+    border: 1px solid #e7434e;
+    color: #fff;
+  }
 }
 
+.button-boat {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #e7434e;
+  border: 1px solid #e7434e;
+  border-radius: 5px;
+  color: white;
+  font: 700 14px/56px $secondary-font;
+  text-transform: uppercase;
+  transition: 400ms;
+
+  &:hover {
+    border: 1px solid #fff;
+  }
+}
 @media only screen and (min-width: 400px) {
   .show-more-btn {
     width: 310px;
+  }
+  .button-boat {
+    width: 320px;
   }
 }

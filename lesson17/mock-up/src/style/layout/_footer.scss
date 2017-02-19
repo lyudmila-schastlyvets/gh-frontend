@@ -53,11 +53,17 @@
     button {
       width: 146px;
       height: 42px;
+      border: 1px solid #e7434e;
       background-color: #e7434e;
       border-radius: 0 5px 5px 0;
-      border: none;
       color: white;
-      font: 400 14px/42px $main-font;
+      font: 400 14px/40px $main-font;
+      transition: 400ms;
+
+      &:hover {
+        border: 1px solid #fff;
+        border-left: none;
+      }
     }
   }
 }
