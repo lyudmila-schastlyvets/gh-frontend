@@ -17,11 +17,11 @@ $(document).ready(function() {
 
     $(function () {
         $(".single-port").slice(0, 5).show();
-        $(".show-more-btn").on('click', function (e) {
+        $(".show-more-ports").on('click', function (e) {
             e.preventDefault();
             $(".single-port:hidden").slice(0, 3).slideDown();
             if ($(".single-port:hidden").length == 0) {
-                $(".show-more-btn").fadeOut('slow');
+                $(".show-more-ports").fadeOut('slow');
             }
             $('html,body').animate({
                 scrollTop: $(this).offset().top
