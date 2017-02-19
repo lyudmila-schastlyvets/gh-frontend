@@ -20,6 +20,7 @@ var gulp = require('gulp'),
     reload = browserSync.reload, // локальний сервер, який містить в собі live reload
     filter = require('gulp-filter'),
     flatten = require('gulp-flatten'),
+    merge = require('merge-stream'),
     mainBowerFiles = require ('main-bower-Files');
 
 var sassBower = {
@@ -77,7 +78,7 @@ gulp.task('jsVendor', function() {
 
 gulp.task('cssVendor', function() {
     var files = (mainBowerFiles({ filter: new RegExp('.*scss$', 'i') }));
-    gulp.src(files)
+    var sass_files = gulp.src(files)
         .pipe(concat('vendor.scss'))
         .pipe(sass({
             outputStyle: 'nested',
@@ -85,8 +86,16 @@ gulp.task('cssVendor', function() {
             errLogToConsole: true,
             includePaths: ['bower_components/bootstrap-sass/assets/stylesheets','bower_components/font-awesome/scss']
         }))
+        // .pipe(cssmin())
+        // .pipe(gulp.dest(path.build.style));
+    var css_bower = gulp.src('./bower_components/jquery-ui/themes/flick/jquery-ui.min.css')
+        .pipe(concat('css-files.css'));
+    var mergedStream = merge(sass_files, css_bower)
+        .pipe(concat('vendor.css'))
         .pipe(cssmin())
         .pipe(gulp.dest(path.build.style));
+
+    return mergedStream;
 });
 
 gulp.task('fontsVendor',['fontsBootstrap'], function () {

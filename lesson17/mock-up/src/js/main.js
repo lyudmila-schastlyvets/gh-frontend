@@ -29,6 +29,20 @@ $(document).ready(function() {
         });
     });
 
+    $(function() {
+
+        var countries = ['Albania', 'Algeria', 'Bosnia and Herzegovina', 'Croatia', 'Cyprus', 'Egypt', 'France',
+            'Greece', 'Israel', 'Italy', 'Lebanon', 'Libya', 'Malta', 'Morocco', 'Monaco', 'Montenegro',
+            'Slovenia', 'Spain', 'Syria', 'Tunisia', 'Turkey'];
+
+        $('.search-field').autocomplete({
+            source: function(request, response) {
+                var results = $.ui.autocomplete.filter(countries, request.term);
+                response(results.slice(0, 5));
+            }
+        })
+    });
+
     $(function () {
         $(".single-feature").slice(0, 4).show();
         $(".show-more-boats").on('click', function (e) {
