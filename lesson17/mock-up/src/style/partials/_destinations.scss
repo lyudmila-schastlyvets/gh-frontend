@@ -51,10 +51,26 @@
   display: none;
   position: relative;
   margin-bottom: 30px;
+  overflow: hidden;
+
+  .image {
+    overflow: hidden;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1) rotate(.09deg);
+    }
+  }
+
 
   img {
+    transition: 400ms;
     width: 100%;
     height: 100%;
+    &:hover {
+
+    }
   }
 }
 

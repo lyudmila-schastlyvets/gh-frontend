@@ -3,39 +3,36 @@
 
   li {
     float: left;
-    margin: 0 1px;
+    margin: 0 10px;
 
     a {
       display: block;
-      width: 30px;
-      height: 30px;
-      background-color: black;
-      font-size: 14px;
-      line-height: 30px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: #717171;
+      font-size: 20px;
+      line-height: 44px;
       text-align: center;
       transition: 400ms;
 
       &:hover {
-        background-color: white;
-
-        .fa {
-          color: black;
-        }
+        background-color: #e7434e;
       }
+    }
 
-      &:first-child {
-        margin-left: 0;
-      }
+    &:first-child {
+      margin-left: 0;
+    }
 
-      &:last-child {
-        margin-right: 0;
-      }
+    &:last-child {
+      margin-right: 0;
     }
   }
 
   .fa {
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 30px;
   }
 

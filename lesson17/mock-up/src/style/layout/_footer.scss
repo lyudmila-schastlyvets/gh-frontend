@@ -5,7 +5,59 @@
 }
 
 .footer-title {
+  margin-bottom: 20px;
   color: white;
   font: 700 14px/22px $secondary-font;
   text-transform: uppercase;
+}
+
+.footer-navigation {
+  li {
+    a {
+      color: white;
+      font: 400 14px/34px $main-font;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer-form {
+  position: relative;
+  margin-bottom: 26px;
+
+  .email-field {
+
+    input {
+      padding: 0 60px 0 14px;
+      width: 100%;
+      background-color: white;
+      border-radius: 5px;
+      border: none;
+      line-height: 42px;
+
+      &::placeholder {
+        color: #717171;
+        font: 400 14px/42px $main-font;
+      }
+    }
+  }
+
+  .submit-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    button {
+      width: 146px;
+      height: 42px;
+      background-color: #e7434e;
+      border-radius: 0 5px 5px 0;
+      border: none;
+      color: white;
+      font: 400 14px/42px $main-font;
+    }
+  }
 }
