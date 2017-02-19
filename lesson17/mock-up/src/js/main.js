@@ -15,65 +15,31 @@ $(document).ready(function() {
         $(".close").removeClass("close-shown");
     });
 
-    $('.fade_slide').slick({
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        infinite: true,
-        arrows: true,
-        speed: 700,
-        fade: true,
-        cssEase: 'linear'
-    });
-
-    $('.clients-list').slick({
-        dots: true,
-        infinite: false,
-        arrows: true,
-        speed: 300,
-        slidesToShow: 6,
-        slidesToScroll: 6,
-        responsive: [
-            {
-                breakpoint: 1050,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+    $(function () {
+        $(".single-port").slice(0, 5).show();
+        $(".show-more-btn").on('click', function (e) {
+            e.preventDefault();
+            $(".single-port:hidden").slice(0, 3).slideDown();
+            if ($(".single-port:hidden").length == 0) {
+                $(".show-more-btn").fadeOut('slow');
             }
-        ]
+            $('html,body').animate({
+                scrollTop: $(this).offset().top
+            }, 1500);
+        });
     });
 
-    $(".masonry-container").masonry({
-        columnWidth: 10,
-        gutter: 5,
-        FitWidth: true,
-        itemSelector: ".item"
+    $(function () {
+        $(".single-feature").slice(0, 4).show();
+        $(".show-more-boats").on('click', function (e) {
+            e.preventDefault();
+            $(".single-feature:hidden").slice(0, 2).slideDown();
+            if ($(".single-feature:hidden").length == 0) {
+                $(".show-more-boats").fadeOut('slow');
+            }
+            $('html,body').animate({
+                scrollTop: $(this).offset().top
+            }, 1500);
+        });
     });
 });
