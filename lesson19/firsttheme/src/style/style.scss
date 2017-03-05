@@ -1,0 +1,52 @@
+/*
+Theme Name: firsttheme
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: firsttheme
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+firsttheme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/fonts';
+
+@import 'components/buttons';
+@import 'components/social-icons';
+@import 'components/form';
+@import 'components/carousel';
+@import 'components/banners';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/hero';
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/clients';
+@import 'pages/news';
+@import 'pages/partners';
+@import 'pages/contact';
+
+@import "pages/blog-post";
+@import 'pages/blog-page';
+@import 'pages/error-page';
+@import 'pages/testimonial-page';
+@import 'pages/news-page';
+@import 'pages/faq-page';
+@import 'pages/services-page';
+@import 'pages/about-us-page';
+@import 'pages/pages-page';

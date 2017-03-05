@@ -1,0 +1,46 @@
+.services-clients-section {
+  padding-bottom: 0;
+
+  .container {
+    padding-bottom: 165px;
+  }
+}
+
+.single-service {
+
+  h3 {
+    margin-top: -5px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  &:first-child {
+    padding-bottom: 0;
+
+    .container {
+      padding-bottom: 98px;
+    }
+  }
+
+  .row > div {
+    margin-bottom: 10px;
+  }
+
+  &:nth-child(even) {
+    background-color: #eaeff3;
+
+    .service-image {
+      text-align: right;
+    }
+  }
+
+  .service-image {
+
+    img {
+      width: 77%;
+    }
+  }
+}

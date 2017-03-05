@@ -1,0 +1,141 @@
+.contact-info {
+
+  .section-description {
+    margin-bottom: 22px;
+  }
+
+  .address {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .exactly-address {
+      position: absolute;
+      top: 50%;
+      left: 100px;
+      transform: translateY(-50%);
+      color: white;
+      font: 700 16px/24px 'Raleway', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      .country {
+        display: block;
+        margin-bottom: 12px;
+        color: #ffaf36;
+        font: 800 30px/24px 'Raleway', sans-serif;
+      }
+    }
+  }
+}
+
+.links {
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .link-call {
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 33px;
+
+    &:hover {
+      color: #ffaf36;
+    }
+
+    img {
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+  }
+
+  .link-mailto {
+    color: #1c1c1c;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.contact {
+  background-color: #eaeff3;
+  padding-bottom: 0;
+
+  .container {
+    padding-bottom: 98px;
+  }
+
+  .section-description {
+    margin-bottom: 15px;
+  }
+
+  .contact-form {
+
+    li:nth-child(1) input[type=text] {
+      margin-bottom: 0;
+    }
+
+    input[required] + label,
+    textarea[required] + label{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 15px 0 6px;
+      color: #757c81;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+     input,
+     textarea {
+       padding: 18px 0 6px;
+       width: 100%;
+       border: none;
+       border-bottom: 1px solid #dce3e8;
+       font-family: "Open Sans", sans-serif;
+     }
+
+    .message {
+      height: 265px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 530px) {
+  .links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .link-mailto {
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+  }
+
+  .contact-info {
+
+    .address {
+      position: relative;
+
+      .exactly-address {
+        top: 50%;
+        left: 10px;
+        font-size: 12px;
+
+        .country {
+          margin-bottom: 12px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

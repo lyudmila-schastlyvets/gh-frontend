@@ -1,0 +1,38 @@
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+
+  li {
+    float: left;
+    margin-left: 12px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #36a8ff;
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.slick-active {
+      background-color: #ffaf36;
+    }
+
+    button {
+      display: none;
+    }
+  }
+}

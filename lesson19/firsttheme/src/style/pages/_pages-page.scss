@@ -1,0 +1,142 @@
+.career-section {
+  padding-bottom: 0;
+
+  .container {
+    padding-bottom: 100px;
+  }
+
+  .pages-image {
+    min-width: 263px;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      max-width: 263px;
+    }
+  }
+
+  .section-description {
+    margin-bottom: 16px;
+  }
+}
+
+.section-offers {
+  background-color: #eaeff3;
+  padding-bottom: 44px;
+
+  .section-description {
+    margin-bottom: 46px;
+  }
+
+  .offer {
+    margin-bottom: 50px;
+  }
+}
+
+.position-list {
+
+  .position {
+    border-bottom: 1px solid #e5eaee;
+
+     .position-link {
+       display: flex;
+       padding: 40px 0;
+       background: url("images/arrow.png") right top 50% no-repeat;
+       justify-content: space-between;
+       align-items: center;
+       color: #1c1c1c;
+       font:700 16px/24px 'Raleway', sans-serif;
+       text-transform: uppercase;
+    }
+
+    .down-arrow {
+      background: url("images/arrow-active.png") right top 50% no-repeat;
+    }
+
+    .open-list {
+      display: none;
+
+      &:after {
+        clear: right;
+        display: block;
+        content: '';
+      }
+    }
+
+    dl {
+      column-count: 1;
+
+      &:after {
+        clear: left;
+        display: block;
+        content: '';
+      }
+
+      dt {
+        display: inline-block;
+        float: left;
+        width: 31%;
+        color: #1c1c1c;
+        font: 500 15px/24px 'Raleway', sans-serif;
+        text-transform: uppercase;
+      }
+
+      dd {
+        display: inline-block;
+        width: 68%;
+        margin: -3px 0 34px;
+        padding: 0 15px;
+        color: #585858;
+        font: 14px/28px $main-font;
+      }
+    }
+
+    .apply-button {
+      background-color: #ffaf36;
+      color: #1c1c1c;
+      float: right;
+      margin-bottom: 40px;
+
+      &:hover {
+        background-color: transparent;
+        color: #ffaf36;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 800px) {
+  .career-section {
+
+    .pages-image {
+      margin-bottom: 0;
+      margin-right: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .content {
+      display: flex;
+    }
+
+    .content-information {
+      display: flex;
+      align-items: center;
+      padding: 0 25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .position-list {
+    .position {
+      dl {
+        column-count: 2;
+      }
+    }
+  }
+}
